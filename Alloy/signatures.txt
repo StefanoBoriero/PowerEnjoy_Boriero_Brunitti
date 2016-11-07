@@ -1,3 +1,4 @@
+
 Position{
 		latitude: one Float
 		longitude: one Float
@@ -16,6 +17,7 @@ abstract User{
 		password: one String} 
 		-> employee / 
 		customer {
+			status: one UserStatus
 			balance:  one Float
 			infractions: set Infraction
 			usedVeichle: setVeichle
@@ -51,5 +53,6 @@ abstract User{
 	abstract Infraction{
 		fee: one Int} -> MissedPickUpReservedCar / AbandonCar
 	abstract CarStatus{} -> abandoned/ Reserved / Unavailable
+	abstract UserStatus{} -> Debtor / Banned / Regular
 	
  07/11/2016 Simone Brunitti & Stefano Boriero 1:30 H
