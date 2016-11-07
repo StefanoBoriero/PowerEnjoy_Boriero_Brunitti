@@ -1,0 +1,52 @@
+Position{
+		latitude: one Float
+		longitude: one Float
+	}
+  
+Vehicle{
+		status: one CarStatus
+		position: one Position
+		battery: one Int
+		availableSeats: one Int}
+		{battery>= 0
+		 battery <= 100}
+     
+abstract User{
+		username: one String
+		password: one String} 
+		-> employee / 
+		customer {
+			infractions: set Infraction
+			usedVeichle: setVeichle
+			inUse: lone Veichle}
+	Company
+	abstract SafeArea{
+		boundaries: set Position} -> Charging{
+				capacity: set Plug} / Normal
+	Plug{
+		state: one PlugState}
+	Ride{	
+		passengers: one Int
+		fee: one Float
+		start: one Time
+		duration: one Time
+		finalPosition: lone Position
+	}
+	{
+	passengers >= 0
+	passengers <= vehicle.availableSeats - 1
+	}
+
+	Reservation{
+		user: one User
+		vehicle: one Vehicle
+		reservationTime: one Time
+		timeLeft: one Time
+		pickedUp: one Boolean
+		ride: lone Ride}
+    
+	abstract Infraction{
+		fee: one Int} -> MissedPickUpReservedCar / AbandonCar
+	abstract CarStatus{} -> abandoned/ Reserved / Unavailable
+	
+ 07/11/2016 Simone Brunitti & Stefano Boriero 1:30 H
