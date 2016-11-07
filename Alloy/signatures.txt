@@ -25,9 +25,8 @@ abstract User{
 	Company
 	abstract SafeArea{
 		boundaries: set Position} -> Charging{
-				chargingCars: set Vehicle
 				capacity: set Plug}
-				{#chargingCars <= #capacity}  / Normal
+				  / Normal
 	Plug{
 		state: one Plug State
 		chargingVehicle: lone Vehicle
