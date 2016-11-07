@@ -37,6 +37,7 @@ abstract User{
 		start: one Time
 		duration: one Time
 		finalPosition: lone Position
+		ended : one Boolean
 	}
 	{
 	passengers >= 0
