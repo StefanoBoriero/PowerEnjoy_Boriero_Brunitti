@@ -29,7 +29,9 @@ abstract User{
 				capacity: set Plug}
 				{#chargingCars <= #capacity}  / Normal
 	Plug{
-		state: one PlugState}
+		state: one Plug State
+		chargingVehicle: lone Vehicle
+		}
 	Ride{	
 		passengers: one Int
 		fee: one Float
