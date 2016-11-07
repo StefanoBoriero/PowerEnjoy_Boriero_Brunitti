@@ -16,6 +16,7 @@ abstract User{
 		password: one String} 
 		-> employee / 
 		customer {
+			balance:  one Float
 			infractions: set Infraction
 			usedVeichle: setVeichle
 			inUse: lone Veichle}
