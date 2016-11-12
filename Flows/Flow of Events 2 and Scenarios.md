@@ -49,9 +49,9 @@ ____
 **NAME**: Employee adds safe parking area  
 **ACTORS**: Employee  
 **PRECONDITION**: The employee must be logged in the system and be on the employee homepage.  
-**EVENT FLOW**  
- -The employee selects "Add a safe parking area" functionality from the menu: he's prompted to the "Add a safe parking area"page.
- -The "Add a safe parking area" page contains a map where the employee can draw polygons that define safe parking areas. The employee draws a safe area and saves.
+**EVENT FLOW**:  
+- The employee selects "Add a safe parking area" functionality from the menu: he's prompted to the "Add a safe parking area"page.
+- The "Add a safe parking area" page contains a map where the employee can draw polygons that define safe parking areas. The employee draws a safe area and saves.
  
 **POSTCONDITION**: The new safe areas are saved in the system and are sent to all cars GPS system.  
 **EXCEPTION**: None
