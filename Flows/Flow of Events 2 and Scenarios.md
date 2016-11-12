@@ -62,16 +62,13 @@ Andrew and his friends want to go to the cinema, but none of them have their car
 is already registered to PowerEnJoy and decides to reserve a car for the evening. He opens the app, logs in and selects 
 "reserve a car". Since he is on the train at the moment, he chooses to enter his home address as search area. He selects 500
 m as search distance. He selects the nearest car. Once reached, Andrew uses the app to open the car. He then proceeds to pick
-up his two friends and then he drives to the cinema. After the movie, Andrew brings the two friends home and then drives to the
-special parking area. There, Andrew plugs the car to the electrical grid. Since the car has been plugged to the power station,
-Andrew gets a 30% discont on his ride. Moreover, since he had at least two passengers, he gets an additional 20% discount.
+up his two friends and then he drives to the cinema. After the movie, Andrew brings the two friends home and then parks the car in a safe area. Since he had at least two passengers, he gets a 20% discount on the total fee.
 
 
 Richard needs to go the airport, but there is nobody who is willing to bring him there. Since he doesn't want to pay a lot of money
 for parking in the airport parking, he decides to rent a car from PowerEnJoy. He reserves a car by means of the app and drives to the
 airport, leaving the car in the proximity of the airport. Since Richard didn't park in a safe area, the system keeps charging him for
 a given amount of time. After this amount of time, the car is locked and tagged as abandoned, and Richard isn't charged anymore.
-Subsequently, an employee sees that the car is abandoned. The employee decides that the car can't be easily accessed and must send 
-some other employee to pick it up. Finally, the car is tagged as available again and Richard is charged the costs for recovering the car.
+Subsequently, an employee sees that the car is abandoned. The employee takes in charge the case and goes where the car has been parked. Once there, he uses his copy of the key to enter the car and drives the car to the nearest charging area. Finally, he plugs the car to the electrical grid and uses his phone to tag the case as solved. In this way, the system will automatically tag the car as available again.
 
 Simone Brunitti 05/11/2016 2:30h
