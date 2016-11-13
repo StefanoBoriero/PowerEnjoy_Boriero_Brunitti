@@ -14,12 +14,12 @@ release date: November 13th, 2016
 
 ### Table of contents  ###
 1. **Introduction**  
-  	1.1 Purpose  
-	1.2 Scope  
-	1.3 Glossary  
-	1.4 Reference documents  
+  	* 1.1 Purpose  
+	* 1.2 Scope  
+	* 1.3 Glossary  
+	* 1.4 Reference documents  
 2. **Overall description**  
-	* Product perspective 
+	* 2.1 Product perspective 
 	* 2.2 Goals  
 	* 2.3 User characteristics  
 	* 2.4 Scenarios  
