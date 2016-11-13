@@ -5,8 +5,8 @@
 RASD
 ---
 
-###Boriero Stefano  
-###Brunitti Simone  
+###Boriero Stefano  876106  
+###Brunitti Simone   875039  
 version: 1.0  
 release date: November 13th, 2016
 ********
@@ -678,6 +678,20 @@ run takeInCharge
 - Availability: the service should be available most of the time, since a user might be riding a car at any time  
 - Security: The system should ensure the security of user's sensible data, like payment information, as thieves might try to access them  
 
+
+Total Work Time  
+Simone Brunitti:  
+28/10/2016 2:30 hours  
+04/11/2016 3:00 hours  
+05/11/2016 2:30 hours  
+07/11/2016 2:00 hours  
+08/11/2016 2:00 hours  
+09/11/2016 1:00 hours  
+10/11/2016 1:00 hours  
+11/11/2016 4:00 hours  
+12/11/2016 4:00 hours  
+13/11/2016 5:30 hours  
+Total time : 27:30 hours
 
 
 
