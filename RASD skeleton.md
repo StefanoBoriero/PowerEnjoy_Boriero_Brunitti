@@ -2,10 +2,13 @@
 
 #PowerEnJoy project   
 ---
-RASD v1
+RASD
 ---
-Boriero Stefano  
-Brunitti Simone  
+
+###Boriero Stefano  
+###Brunitti Simone  
+version: 1.0  
+release date: November 13th, 2016
 ********
 <p style="page-break-before:always;"></p>
 
@@ -15,22 +18,32 @@ Brunitti Simone
 	1.2 Scope  
 	1.3 Glossary  
 	1.4 Reference documents  
-	1.5 Overview  
-2. ***Overall description***  
+2. **Overall description**  
 	2.1 Product perspective  
 	2.2 Goals  
 	2.3 User characteristics  
 	2.4 Scenarios  
-	2.5 Constraints  
-		2.5.1 Regulations  
+	2.5 Constraints
+	 
+	 	2.5.1 Regulations
 		2.5.2 Hardware limitations  
 		2.5.3 Parallelism  
 	2.6 Assumptions and dependecies  
+		
+		2.6.1 Domain Assumptions  
 3. **Specific Requirements**  
-  3.1 External Interface Requirements  
-  3.2 Functional Requirements  
-  3.3 Performance Requirements   
-  3.4 Software System Attributes  
+	3.1 External Interface Requirements  
+	3.2 Functional Requirements  
+  	
+		3.2.1 Requirements  
+		3.2.2 Use Cases  
+		3.2.3 Sequence Diagrams  
+		3.2.4 Activity Diagrams  
+		3.2.5 State Charts  
+		3.2.6 Class Diagram  
+		3.2.7 Alloy  
+	3.3 Performance Requirements   
+	3.4 Software System Attributes  
 
 <p style="page-break-before:always;"></p>
 
@@ -66,9 +79,6 @@ The main focus of this RASD is to describe the PowerEnJoy App and the underlying
 
 ###1.4 Reference Documents  
 Car electronic equipment: [Electronic Control Unit - Wikipedia](https://en.wikipedia.org/wiki/Electronic_control_unit)
-
-
-###1.5 Overview  
 
 <p style="page-break-before:always;"></p>  
 
