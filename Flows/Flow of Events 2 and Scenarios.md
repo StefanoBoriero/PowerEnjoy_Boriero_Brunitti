@@ -3,7 +3,7 @@
 **ACTORS**: User  
 **PRECONDITION**: The user must be logged in the app and must be on the homepage. The user must not be tagged as debtor.  
 **EVENT FLOW**:    
-- He selects "Reserve a car" functionality from the menu: he's prompted to the "reserve a car" page
+- The user selects "Reserve a car" functionality from the menu: he's prompted to the "reserve a car" page
 - The user selects the desired search area (either entering  a specific address or selecting to use the current position).
 - The user inserts the desired search distance and presses the "search" button. The user is prompted to the "select a car" page.
 - The user selects one of the available cars from the map.
@@ -57,6 +57,22 @@ ____
 **EXCEPTION**: None
 
 ____  
+
+**Employee adds a car to the fleet**  
+**NAME**: Employee adds a car to the fleet  
+**ACTORS**: Employee  
+**PRECONDITION**: The employee must be logged in the system and be on the employee homepage.  
+**EVENT FLOW**:    
+- The employee selects "Add a car" functionality from the menu: he's prompted to the "Add a car"page
+- The "Add a car" page contains a form asking the plate of the car and the mac address of the android device installed on it. The employee fills the form
+- The employee clicks the add button
+
+**POSTCONDITION**: The new car is added to the fleet of PowerEnJoy cars.  
+**EXCEPTION**:  
+- The employee enters an invalid mac address or plate number. The system asks to fill the form again.
+
+____  
+
 
 Andrew and his friends want to go to the cinema, but none of them have their car available at the moment. Andrew, however, 
 is already registered to PowerEnJoy and decides to reserve a car for the evening. He opens the app, logs in and selects 
