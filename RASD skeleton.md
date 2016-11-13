@@ -653,7 +653,7 @@ run reserveVehicle
 run unlockVehicle
 run takeInCharge
 ```
-
+![Alloy Consistency Proof](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/Alloy/alloy_consistency.png "Alloy Consistency Proof")
 ![Alloy outcome](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/Alloy/alloy_model.png "Alloy Outcome World")
 
 ###3.3 Performance Requirements  
