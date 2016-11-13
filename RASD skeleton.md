@@ -87,6 +87,8 @@ The system has to interface with external payment providers: in particular it mu
 ####3.2.1 Requirements  
 ####3.2.2 Use Cases  
 ####3.2.3 Sequence Diagrams  
+![Reservation Sequence Diagram](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti//blob/master/SequenceDiagram/Reservation Sequence diagram.jpg
+"Reservation Sequence Diagram")
 ####3.2.4 Activity Diagrams  
 ![Payment ActivityDiagram](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/Payment_ActitvityDiagram.jpg "Payment Activity Diagram")
 ####3.2.5 State Chart Diagrams  
