@@ -18,7 +18,7 @@ Brunitti Simone
 	1.5 Overview  
 2. **Overall description**  
 	2.1 Product perspective  
-	2.2 Product functions  
+	2.2 Goals  
 	2.3 User characteristics  
 	2.4 Scenarios  
 	2.5 Constraints  
@@ -57,7 +57,15 @@ Car electronic equipment: [Electronic Control Unit - Wikipedia](https://en.wikip
 ###2.1 Product Perspective   
 
 
-###2.2 Product Functions  
+###2.2 Goals  
+The main goals this system is meant to offer the fulfillment of these goals:
+- G1 Enable Regular users to reserve a car  
+- G2 Unlock a reserved car  
+- G3 Deposit money  
+- G4 Enable employee to easily detect cars that need assistance  
+- G5 Define the set of safe areas  
+- G6 Discourage a bad usage of the services  
+
 
 
 ###2.3 User Characteristics  
@@ -116,7 +124,43 @@ The system has to interface with external payment providers: in particular it mu
 The on-board android device has to interface with the Electric Control Unit in order to access its sensors and actuators.
 
 ###3.2 Functional Requirements  
+
 ####3.2.1 Requirements  
+In order to fulfill the above specified goals, the system has to provide these functionalities:  
+- G1 Enable Regular users to reserve a car  
+	- System is able to distinguish between Regular and non-Regular users  
+	- System allows user to define search area (specific address or current position)  
+	- System is able to retrieve user current position  
+	- System is able to detect available cars within a specified area  
+	- System is able to tag a car as reserved  
+- G2 Unlock a reserved car  
+	- System is able to retrieve user current position  
+	- System is able to check if user is near the current reserved car  
+	- System is able to unlock a car remotely  
+- G3 Deposit money
+	- System is able to interface with an external payment provider  
+- G4 Enable employee to easily detect cars that need assistance  
+	- System is able to detect if a car is in outside a safe area  
+	- System is able to detect if a car has low battery   
+	- System allows employee to access an assistance list containing all cars that need assistance  
+	- System is able to notify the employee if a new car is added to the assistance list  
+	- System allows employee to take charge of a car in assistance list  
+	- System is able to tag car as TookInCharge  
+	- System allows employees to register a new car in the fleet  
+	- System allows employees to remove a car from the fleet  
+- G5 Define the set of safe areas  
+	- System allows employees to define a safe area on a map corresponding to a real world safe area  
+- G6 Discourage bad usage of the services
+	- System is able to tag user as a debtor if his balance is negative  
+	- System is able to disable reservation functions for debtors  
+	- Notify the user if he has been tagged as debtor  
+	- System Is able to charge 30% more on the ride if the car is left more than 3 km from the nearest power station or left with less than 20% battery  
+	- System is able to charge 1 EUR to a user who doesn't pick up the car before the given timer expires  
+	- System is able to tag a user who infringed the rules as Signalled user  
+	- System is able to ban a fraudulent user preventing him to access the services  
+
+
+
 ####3.2.2 Use Cases  
 ![Use Case](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/UseCases/UseCase.jpg "System UseCase")
 
