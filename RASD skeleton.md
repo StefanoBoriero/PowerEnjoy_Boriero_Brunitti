@@ -335,15 +335,36 @@ ____
 
 ####3.2.3 Sequence Diagrams  
 ![Reservation Sequence Diagram](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/SequenceDiagram/Reservation Sequence diagram.jpg
-"Reservation Sequence Diagram")  
+"Reservation Sequence Diagram")
+
+____  
+
 ![Report A Damage SequenceDiagram](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/SequenceDiagram/Damage Report Sequence Diagram.jpg
 "Report a damage Sequence Diagram")
+
+____  
+
 ![Unlocking Car SequenceDiagram](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/SequenceDiagram/Unlocking%20Car%20Sequence%20Diagram.jpg
 "Unlock Car Sequence Diagram")
+
+____  
+
 ####3.2.4 Activity Diagrams  
 ![Payment ActivityDiagram](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/Payment_ActitvityDiagram.jpg "Payment Activity Diagram")
+
+____  
+
+
 ####3.2.5 State Chart Diagrams  
 ![Vehicle_StateChart](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/StateCharts/StateChart_Vehicle.jpg "Vehicle State Chart")
+
+____  
+
+####3.2.6 Class Diagram
+![ClassDiagram](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/Class%20Diagram.jpg
+"ClassDiagram")
+
+____  
 
 ###3.3 Performance Requirements  
 
