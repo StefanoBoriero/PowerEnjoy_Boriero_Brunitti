@@ -691,7 +691,19 @@ Simone Brunitti:
 11/11/2016 4:00 hours  
 12/11/2016 4:00 hours  
 13/11/2016 5:30 hours  
-Total time : 27:30 hours
+Total time : 27:30 hours  
 
+Boriero Stefano:  
+28/10/2016 2:30 hours  
+04/11/2016 3:00 hours  
+05/11/2016 2:30 hours  
+07/11/2016 2:00 hours  
+08/11/2016 2:00 hours  
+09/11/2016 1:00 hours  
+10/11/2016 3:00 hours  
+11/11/2016 4:00 hours  
+12/11/2016 3:00 hours  
+13/11/2016 5:30 hours  
+Total time: 28:30 hours
 
 
