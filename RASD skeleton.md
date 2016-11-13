@@ -74,6 +74,7 @@ Brunitti Simone
 ####3.2.2 Use Cases  
 ####3.2.3 Sequence Diagrams  
 ####3.2.4 Activity Diagrams  
+![Payment ActivityDiagram](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/Payment_ActitvityDiagram.jpg "Payment Activity Diagram")
 ####3.2.5 State Chart Diagrams  
 ![Vehicle_StateChart](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/StateCharts/StateChart_Vehicle.jpg "Vehicle State Chart")
 
