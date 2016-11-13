@@ -92,7 +92,15 @@ Richard needs to go the airport, but there is nobody who is willing to bring him
 
 
 ###2.5 Constraints  
+####2.5.1 Regulations  
+The user must give permission to the system to have access to his current position. Moreover, since the system has access to sensible information, including payment deatails, it needs to meet high security requirements.  
 
+####2.5.2 Hardware Limitations  
+-	Mobile: smartphone with 3G connection and access to a web browser
+-	PC: access to an internet connection and a web browser
+
+#####2.5.3 Parallelism  
+The system supports parallelism, in order to be accessed by multiple customer and employees at any given time. To make this possible, the system will have to deal with critical situations, such as avoiding multiple reservations on the same car from different customers (the system will disable the selection of an available car from the map as soon as someone tries to reserve it, locking it for a given amount of time).
 
 ###2.6 Assumptions and Dependencies  
 
