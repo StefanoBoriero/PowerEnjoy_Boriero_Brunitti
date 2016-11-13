@@ -11,17 +11,20 @@ Brunitti Simone
 
 ### Table of contents  ###
 1. **Introduction**  
-  1.1 Purpose  
+  	1.1 Purpose 
 	1.2 Scope  
 	1.3 Glossary  
 	1.4 Reference documents  
 	1.5 Overview  
-2. **Overall description**  
+2. ***Overall description***  
 	2.1 Product perspective  
 	2.2 Goals  
 	2.3 User characteristics  
 	2.4 Scenarios  
 	2.5 Constraints  
+		2.5.1 Regulations  
+		2.5.2 Hardware limitations  
+		2.5.3 Parallelism  
 	2.6 Assumptions and dependecies  
 3. **Specific Requirements**  
   3.1 External Interface Requirements  
@@ -91,20 +94,23 @@ A customer can be any person who is older than 18 years old and owns a driving l
 An employee is a person who works for PowerEnJoy, thus managing and taking care of cars that need assistance. Their credentials to access the system will be given to them once they are hired.
 
 
-###2.4 Scenarios  
+###2.4 Scenarios
 **SCENARIO 1**  
-Jenkins is a university student who just moved in town to attend lectures. He's concerned with pollution issues, so he often travels with public transport in the city, although he doesn't like it at all. A student that lives in town suggests him to try the PowerEnJoy service as he's really satisfied with it. Jenkins thinks that this service is what really suits its needs, as it offers an environment friendly way to move around the city, so decides to register to the system. He surfs to the web application through a web browser, and starts the registration process: he enters all the information and waits for the password to be delivered. As soon as he has received it, he logs in.
+John wants to rent a car. He logs in the application with his credentials and selects reserve a car. He selects to use his current position and 20 km as maximum search distance. The application shows him a map with all the available cars in the selected range. He selects the nearest one and reserves it. Once reached, he unlocks the car pressing the unlock button on the app and enters. He drives to his destination and parks in a safe area. After he exits the car, the system locks the car automatically. Since the car has more than 50% left battery, a 20% discount on the fee is applied.  
 
 **SCENARIO 2**  
-William's car has suffered an accident last week, so he has been using PowerEnJoy to move around during these days. While preparing to go to work, he wants to check if there's any available car to reserve in order to get to work: to do so, he logs into the system and navigates to the "Reserve a car" functionality. Using its position, he reserves a car in a safe area near its home and walks to it. Once reached, he notices that one of the headlight is broken, so decides to report this damage to the system: he accesses the application and navigates to the "Report Damage" function, and fills a form to describe the kind of damage the car has. Since he cannot use this car, he has to look for another one: luckily there is another available car in the same safe area, so he reserves it and goes to work.
+Jenkins is a university student who just moved in town to attend lectures. He's concerned with pollution issues, so he often travels with public transport in the city, although he doesn't like it at all. A student that lives in town suggests him to try the PowerEnJoy service as he's really satisfied with it. Jenkins thinks that this service is what really suits its needs, as it offers an environment friendly way to move around the city, so decides to register to the system. He surfs to the web application through a web browser, and starts the registration process: he enters all the information and waits for the password to be delivered. As soon as he has received it, he logs in.
 
 **SCENARIO 3**  
-Poseidon works for PowerEnJoy to provide assistance to vehicles. His working day has just started, so he logs into the system to organize his schedule. He consults the assistance list to choose the nearest car to reserve, and finds that a car parked in a charging area near its position has a low level of battery and is not plugged: this looks like an easy task to him, so he takes in charge the vehicle and heads to the charging area. Once solved the issue, he accesses the application through the smartphone provided by the company to tag the issue as solved, then consults the assistance list to select his next task.
+William's car has suffered an accident last week, so he has been using PowerEnJoy to move around during these days. While preparing to go to work, he wants to check if there's any available car to reserve in order to get to work: to do so, he logs into the system and navigates to the "Reserve a car" functionality. Using its position, he reserves a car in a safe area near its home and walks to it. Once reached, he notices that one of the headlight is broken, so decides to report this damage to the system: he accesses the application and navigates to the "Report Damage" function, and fills a form to describe the kind of damage the car has. Since he cannot use this car, he has to look for another one: luckily there is another available car in the same safe area, so he reserves it and goes to work.
 
 **SCENARIO 4**  
-Andrew and his friends want to go to the cinema, but none of them have their car available at the moment. Andrew, however, is already registered to PowerEnJoy and decides to reserve a car for the evening. He opens the app, logs in and selects "reserve a car". Since he is on the train at the moment, he chooses to enter his home address as search area. He selects 500 m as search distance. He selects the nearest car. Once reached, Andrew uses the app to open the car. He then proceeds to pick up his two friends and then he drives to the cinema. After the movie, Andrew brings the two friends home and then parks the car in a safe area. Since he had at least two passengers, he gets a 20% discount on the total fee.
+Poseidon works for PowerEnJoy to provide assistance to vehicles. His working day has just started, so he logs into the system to organize his schedule. He consults the assistance list to choose the nearest car to reserve, and finds that a car parked in a charging area near its position has a low level of battery and is not plugged: this looks like an easy task to him, so he takes in charge the vehicle and heads to the charging area. Once solved the issue, he accesses the application through the smartphone provided by the company to tag the issue as solved, then consults the assistance list to select his next task.
 
 **SCENARIO 5**  
+Andrew and his friends want to go to the cinema, but none of them have their car available at the moment. Andrew, however, is already registered to PowerEnJoy and decides to reserve a car for the evening. He opens the app, logs in and selects "reserve a car". Since he is on the train at the moment, he chooses to enter his home address as search area. He selects 500 m as search distance. He selects the nearest car. Once reached, Andrew uses the app to open the car. He then proceeds to pick up his two friends and then he drives to the cinema. After the movie, Andrew brings the two friends home and then parks the car in a safe area. Since he had at least two passengers, he gets a 20% discount on the total fee.
+
+**SCENARIO 6**  
 Richard needs to go the airport, but there is nobody who is willing to bring him there. Since he doesn't want to pay a lot of money for parking in the airport parking, he decides to rent a car from PowerEnJoy. He reserves a car by means of the app and drives to the airport, leaving the car in the proximity of the airport. Since Richard didn't park in a safe area, the system keeps charging him for a given amount of time. After this amount of time, the car is locked and tagged as abandoned, and Richard isn't charged anymore. Subsequently, an employee sees that the car is abandoned. The employee takes in charge the case and goes where the car has been parked. Once there, he uses his copy of the key to enter the car and drives the car to the nearest charging area. Finally, he plugs the car to the electrical grid and uses his phone to tag the case as solved. In this way, the system will automatically tag the car as available again.
 
 
