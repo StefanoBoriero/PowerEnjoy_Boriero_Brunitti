@@ -136,7 +136,9 @@ The on-board android device has to interface with the Electric Control Unit in o
   -	The registration fails because the Unregistered user didn’t fill in all necessary information
   -	The registration fails because some information is in conflict with another user
   -	The registration fails because payment information is incorrect
-    
+  
+____ 
+  
 **NAME** : 
   Unlock Reserved car  
 **ACTORS** : 
@@ -152,6 +154,7 @@ The on-board android device has to interface with the Electric Control Unit in o
   -	The user has GPS sensor switched off: the system will ask him to switch it on before prompting him to the Unlock Reserved Car page
   -	The user is too far from the car: the button won't be clickable
 
+____ 
   
 **NAME** : 
   Damage Report  
@@ -169,6 +172,7 @@ The on-board android device has to interface with the Electric Control Unit in o
 **EXCEPTION** : 
   none
 
+____ 
 
 **NAME**: Take in charge a vehicle  
 **ACTORS**: Employee  
@@ -185,6 +189,7 @@ An employee wants to check if there's any vehicle that needs assistance and take
 **EXCEPTIONS** :
 -	The vehicle has just been taken in charge by another employee: the system will show an error message
 
+____ 
 
 **NAME** : Tag as solved  
 **ACTORS** : Employee  
@@ -199,6 +204,82 @@ An employee wants to check if there's any vehicle that needs assistance and take
 -	The car is tagged as Available and is no longer in the employee's list of currently taken in charge vehicles
 
 **EXCEPTIONS**:  the issue was not solved and the car needs assistance again  
+
+____ 
+
+**NAME**: User reserves a car  
+**ACTORS**: User  
+**PRECONDITION**: The user must be logged in the app and must be on the homepage. The user must not be tagged as debtor.  
+**EVENT FLOW**:    
+- The user selects "Reserve a car" functionality from the menu: he's prompted to the "reserve a car" page
+- The user selects the desired search area (either entering  a specific address or selecting to use the current position).
+- The user inserts the desired search distance and presses the "search" button. The user is prompted to the "select a car" page.
+- The user selects one of the available cars from the map.
+
+**POSTCONDITION**: The reservation is forwarded to the system. The system tags the selected car as reserved and initialiazes a 1h timeout for that specific car. The user is tagged as active.  
+**EXCEPTION**:  
+- The user enters an invalid distance ( for axample a negative number) or an invalid search address. The reservation is not forwarded and the system asks to enter a valid value.  
+
+____  
+
+**User edits personal information**  
+**NAME** :  User edits personal information  
+**ACTORS**: User  
+**PRECONDITION**: The user must be logged in the app and must be on the homepage.  
+**EVENT FLOW**:  
+ - The user selects "Access personal area" functionality from the menu: he's prompted to the personal area page.
+ - He selects "Edit personal information" functionality on the "personal area " page: he's prompted to the Edit personal information page.
+ - The user edits his personal information (such as payment details, email etc.) using a form.
+ - The user presses the "save" button.
+ 
+**POSTCONDITION**: The new personal information is saved in the system.  
+**EXCEPTION**:
+- The user enters invalid payment information or invalid values. The system reverts the changes and asks the user to enter valid infomation.
+
+____  
+
+**User deposits money to personal balance**  
+**NAME**: User deposits money to personal balance  
+**ACTORS**: User  
+**PRECONDITION**: The user must be logged in the app and must be on the homepage  
+**EVENT FLOW**:  
+- The user selects "Access personal area" functionality from the menu: he's prompted to the "Personal Area"page.
+- He selects "Deposit money" functionality on the "Personal Area" page: he's prompted to the "Deposit Money" page.
+- The user selects the amount of money he wants to deposit from a list of predefined amounts and clicks the "Deposit" button.
+
+**POSTCONDITION**: The system updates the user account balance.  
+**EXCEPTION**:
+- The user tries to deposit more money than he has on his credit card. The system shows the user an error message and the balance is not updated.
+
+____  
+
+**Employee adds a safe parking area**  
+**NAME**: Employee adds safe parking area  
+**ACTORS**: Employee  
+**PRECONDITION**: The employee must be logged in the system and be on the employee homepage.  
+**EVENT FLOW**:  
+- The employee selects "Add a safe parking area" functionality from the menu: he's prompted to the "Add a safe parking area"page.
+- The "Add a safe parking area" page contains a map where the employee can draw polygons that define safe parking areas. The employee draws a safe area and saves.
+ 
+**POSTCONDITION**: The new safe areas are saved in the system and are sent to all cars GPS system.  
+**EXCEPTION**: None
+
+____  
+
+**Employee adds a car to the fleet**  
+**NAME**: Employee adds a car to the fleet  
+**ACTORS**: Employee  
+**PRECONDITION**: The employee must be logged in the system and be on the employee homepage.  
+**EVENT FLOW**:    
+- The employee selects "Add a car" functionality from the menu: he's prompted to the "Add a car"page
+- The "Add a car" page contains a form asking the plate of the car and the mac address of the android device installed on it. The employee fills the form
+- The employee clicks the add button
+
+**POSTCONDITION**: The new car is added to the fleet of PowerEnJoy cars.  
+**EXCEPTION**:  
+- The employee enters an invalid mac address or plate number. The system asks to fill the form again.
+
+____  
 
 ####3.2.3 Sequence Diagrams  
 ![Reservation Sequence Diagram](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/SequenceDiagram/Reservation Sequence diagram.jpg
