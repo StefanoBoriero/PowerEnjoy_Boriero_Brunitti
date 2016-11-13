@@ -14,7 +14,7 @@ release date: November 13th, 2016
 
 ### Table of contents  ###
 1. **Introduction**  
-  	1.1 Purpose 
+  	1.1 Purpose  
 	1.2 Scope  
 	1.3 Glossary  
 	1.4 Reference documents  
