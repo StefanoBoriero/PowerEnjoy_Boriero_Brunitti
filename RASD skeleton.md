@@ -670,7 +670,7 @@ run takeInCharge
 ![Alloy outcome](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/Alloy/alloy_model.png "Alloy Outcome World")
 
 ###3.3 Performance Requirements  
-- The system should give feedbacks in at most one minute since the request is performed by the user, since he might performe different actions based on the outcome  
+- The system should give feedbacks in at most one minute since the request is performed by the user, since he might perform different actions based on the outcome  
 
 
 ###3.4 Software System Attributes  
