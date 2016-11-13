@@ -101,6 +101,8 @@ The system has to interface with external payment providers: in particular it mu
 "Reservation Sequence Diagram")  
 ![Report A Damage SequenceDiagram](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/SequenceDiagram/Damage Report Sequence Diagram.jpg
 "Report a damage Sequence Diagram")
+![Unlocking Car SequenceDiagram](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/SequenceDiagram/Unlocking%20Car%20Sequence%20Diagram.jpg
+"Unlock Car Sequence Diagram")
 ####3.2.4 Activity Diagrams  
 ![Payment ActivityDiagram](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/Payment_ActitvityDiagram.jpg "Payment Activity Diagram")
 ####3.2.5 State Chart Diagrams  
