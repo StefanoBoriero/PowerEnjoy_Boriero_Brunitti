@@ -70,7 +70,12 @@ Brunitti Simone
 
 
 ###3.2 Functional Requirements  
-
+####3.2.1 Requirements  
+####3.2.2 Use Cases  
+####3.2.3 Sequence Diagrams  
+####3.2.4 Activity Diagrams  
+####3.2.5 State Chart Diagrams  
+![Vehicle_StateChart](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/StateCharts/StateChart_Vehicle.jpg "Vehicle State Chart")
 
 ###3.3 Performance Requirements  
 
