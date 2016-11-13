@@ -61,7 +61,7 @@ The main focus of this RASD is to describe the PowerEnJoy App and the underlying
 
 ###2.3 User Characteristics  
 There are two categories of users that will interact with the system: customers and employees.
-A customer can be any person who is older than 18 years old and owns a driving license. In order to access the app, the customer will first need to register supllying some personal details.
+A customer can be any person who is older than 18 years old and owns a driving license. In order to access the app, the customer will first need to register supplying some personal details.
 An employee is a person who works for PowerEnJoy, thus managing and taking care of cars that need assistance. Their credentials to access the system will be given to them once they are hired.
 
 
