@@ -26,10 +26,8 @@ Brunitti Simone
 3. **Specific Requirements**  
   3.1 External Interface Requirements  
   3.2 Functional Requirements  
-  3.3 Performance Requirements  
-  3.4 Design Constraints  
-  3.5 Software System Attributes  
-  3.6 Other Requirements  
+  3.3 Performance Requirements   
+  3.4 Software System Attributes  
 
 <p style="page-break-before:always;"></p>
 
@@ -73,7 +71,8 @@ Car electronic equipment: [Electronic Control Unit - Wikipedia](https://en.wikip
 
 #2 Overall Description  
 ###2.1 Product Perspective   
-
+The system that is going to be developed will be splitted in two major parts: a central part that will process most demanding operations, and an on-board part that will collect data and communicate with the central part.  
+The central part will have to interface with an external payment provider, while the on-board part will have to interface with the electronic control unit. Moreover, the on-board part will need a communication module to interact with the central part.
 
 ###2.2 Goals  
 The main goals this system is meant to offer the fulfillment of these goals:
@@ -383,15 +382,14 @@ ____
 ____  
 
 ###3.3 Performance Requirements  
+- The system should give feedbacks in at most one minute since the request is performed by the user, since he might performe different actions based on the outcome  
 
 
-###3.4 Design Constraints  
+###3.4 Software System Attributes  
+- Reliability: the system should have a distributed structure to ensure the access to the service even in case of partial breakdowns, in order to not interrupt the service while someone is driving  
+- Availability: the service should be available most of the time, since a user might be riding a car at any time  
+- Security: The system should ensure the security of user's sensible data, like payment information, as thieves might try to access them  
 
-
-###3.5 Software System Attributes  
-
-
-###3.6 Other Requirements  
 
 
 
