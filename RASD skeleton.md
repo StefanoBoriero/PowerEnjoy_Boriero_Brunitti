@@ -1,8 +1,9 @@
 ![PolimiLogo](https://upload.wikimedia.org/wikipedia/it/b/be/Logo_Politecnico_Milano.png "Polimi")  
 
-**PowerEnJoy project**  
+#PowerEnJoy project   
 ---
-
+RASD v1
+---
 Boriero Stefano  
 Brunitti Simone  
 ********
@@ -45,7 +46,7 @@ The main focus of this RASD is to describe the PowerEnJoy App and the underlying
 
 
 ###1.4 Reference Documents  
-
+Car electronic equipment: [Electronic Control Unit - Wikipedia](https://en.wikipedia.org/wiki/Electronic_control_unit)
 
 
 ###1.5 Overview  
@@ -60,14 +61,14 @@ The main focus of this RASD is to describe the PowerEnJoy App and the underlying
 
 
 ###2.3 User Characteristics  
-There are two categories of users that will interact with the system: customers and employees.
-A customer can be any person who is older than 18 years old and owns a driving license. In order to access the app, the customer will first need to register supplying some personal details.
+There are two categories of users that will interact with the system: customers and employees.  
+A customer can be any person who is older than 18 years old and owns a driving license. In order to access the app, the customer will first need to register supplying some personal details.  
 An employee is a person who works for PowerEnJoy, thus managing and taking care of cars that need assistance. Their credentials to access the system will be given to them once they are hired.
 
 
 ###2.4 Scenarios  
 **SCENARIO 1**  
-Jenkins is a university student who just moved in town to attend lectures. He's concerned with pollution issues, so he often travels with public transport in the city, although he doesn't like it at all. A student that lives in town suggests him to try the PowerEnJoy service as he's really satisfied with it. Jenkins thinks that this service is what really suits its needs, as it offers an environment friendly way to travel in the city, so decides to register to the system. He surfs to the web application through a web browser, and starts the registration process: he enters all the information and waits for the password to be delivered. As soon as he has received it, he logs in.
+Jenkins is a university student who just moved in town to attend lectures. He's concerned with pollution issues, so he often travels with public transport in the city, although he doesn't like it at all. A student that lives in town suggests him to try the PowerEnJoy service as he's really satisfied with it. Jenkins thinks that this service is what really suits its needs, as it offers an environment friendly way to move around the city, so decides to register to the system. He surfs to the web application through a web browser, and starts the registration process: he enters all the information and waits for the password to be delivered. As soon as he has received it, he logs in.
 
 **SCENARIO 2**  
 William's car has suffered an accident last week, so he has been using PowerEnJoy to move around during these days. While preparing to go to work, he wants to check if there's any available car to reserve in order to get to work: to do so, he logs into the system and navigates to the "Reserve a car" functionality. Using its position, he reserves a car in a safe area near its home and walks to it. Once reached, he notices that one of the headlight is broken, so decides to report this damage to the system: he accesses the application and navigates to the "Report Damage" function, and fills a form to describe the kind of damage the car has. Since he cannot use this car, he has to look for another one: luckily there is another available car in the same safe area, so he reserves it and goes to work.
@@ -78,7 +79,7 @@ Poseidon works for PowerEnJoy to provide assistance to vehicles. His working day
 **SCENARIO 4**  
 Andrew and his friends want to go to the cinema, but none of them have their car available at the moment. Andrew, however, is already registered to PowerEnJoy and decides to reserve a car for the evening. He opens the app, logs in and selects "reserve a car". Since he is on the train at the moment, he chooses to enter his home address as search area. He selects 500 m as search distance. He selects the nearest car. Once reached, Andrew uses the app to open the car. He then proceeds to pick up his two friends and then he drives to the cinema. After the movie, Andrew brings the two friends home and then parks the car in a safe area. Since he had at least two passengers, he gets a 20% discount on the total fee.
 
-**SCENARIO 5**
+**SCENARIO 5**  
 Richard needs to go the airport, but there is nobody who is willing to bring him there. Since he doesn't want to pay a lot of money for parking in the airport parking, he decides to rent a car from PowerEnJoy. He reserves a car by means of the app and drives to the airport, leaving the car in the proximity of the airport. Since Richard didn't park in a safe area, the system keeps charging him for a given amount of time. After this amount of time, the car is locked and tagged as abandoned, and Richard isn't charged anymore. Subsequently, an employee sees that the car is abandoned. The employee takes in charge the case and goes where the car has been parked. Once there, he uses his copy of the key to enter the car and drives the car to the nearest charging area. Finally, he plugs the car to the electrical grid and uses his phone to tag the case as solved. In this way, the system will automatically tag the car as available again.
 
 
@@ -87,11 +88,31 @@ Richard needs to go the airport, but there is nobody who is willing to bring him
 
 ###2.6 Assumptions and Dependencies  
 
+####2.6.1 Domain Assumptions  
+* Every car is equipped with an Electronic Control Unit, consisting of the following components:  
+	- Door Control Unit (DCU): actuators for opening and closing doors by remote control, sensors to capture actual state of doors  
+	- Engnine Control Unit (ECU): sensors to collect data and actuators to ensure optimal performances  
+	- Seat Control Unit: sensors to detect the presence of passaengers on the vehicle  
+	- Telematic Control Unit (TCU): sensor to ensure vehicle tracking (GPS)  
+	- Battery Managment System (BMS): sensors monitoring battery state  
+* Every car is equipped with an on-board android device with GSM, GPRS, LTE and Wi-Ficommunication modules.  
+* Cars can be opened with physical keys by company employees  
+* The company provides employees with a smartphone during working hours to access the system while outside PowerEnJoy headquarter  
+* Discounts are non-cumulative: in case of multiple applicable discounts, only the highest will be applied  
+* A person doesn't have two driving licenses for the same category of vehicles  
+* The number of passangers is non negative  
+* Usernames are unique  
+* When new vehicles are acquired by the company, its information is registered in the system
+* When a vehicle is dismissed by the company, its information is cancelled from the system
+
+
+
 <p style="page-break-before:always;"></p>  
 
 #3 Specific Requirements  
 ###3.1 External Interface Requirements   
-The system has to interface with external payment providers: in particular it must be able to request a payment and to retrieve the outcome of the payment. It also has to interface with Google Maps, as it will rely on it to show current position of vehicles.
+The system has to interface with external payment providers: in particular it must be able to request a payment and to retrieve the outcome of the payment. It also has to interface with Google Maps, as it will rely on it to show current position of vehicles.  
+The on-board android device has to interface with the Electric Control Unit in order to access its sensors and actuators.
 
 ###3.2 Functional Requirements  
 ####3.2.1 Requirements  
