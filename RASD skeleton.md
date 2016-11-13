@@ -91,8 +91,8 @@ Richard needs to go the airport, but there is nobody who is willing to bring him
 ####2.6.1 Domain Assumptions  
 * Every car is equipped with an Electronic Control Unit, consisting of the following components:  
 	- Door Control Unit (DCU): actuators for opening and closing doors by remote control, sensors to capture actual state of doors  
-	- Engnine Control Unit (ECU): sensors to collect data and actuators to ensure optimal performances  
-	- Seat Control Unit: sensors to detect the presence of passaengers on the vehicle  
+	- Engine Control Unit (ECU): sensors to collect data and actuators to ensure optimal performances  
+	- Seat Control Unit: sensors to detect the presence of passengers on the vehicle  
 	- Telematic Control Unit (TCU): sensor to ensure vehicle tracking (GPS)  
 	- Battery Managment System (BMS): sensors monitoring battery state  
 * Every car is equipped with an on-board android device with GSM, GPRS, LTE and Wi-Ficommunication modules.  
