@@ -43,6 +43,24 @@ The app requires the user to be registered to the system, by providing their cre
 The main focus of this RASD is to describe the PowerEnJoy App and the underlying system that will suppport it.  Since PowerEnJoy is a newborn startup, the system must necessarily be designed from scratch. This system will be interfaced with the PowerEnJoy App, which is a web Application and as such can be accessed either by means of a mobile device or a pc.  The system receives data from an android device installed on each car interfacing with various sensors  (additional details on sensors can be found in paragraph 2.6). Finally, the system will implement different functionalities that will be used by employees in order to manage and keep track of cars that need assistance.
 
 ###1.3 Glossary  
+| Term       | Meaning           |
+| ------------- |-------------|
+| Debtor User    |A user with a negative balance |
+| Signalled User   |A user with at least one rule infraction      |
+| Banned User |A user with repeated infractions      |
+| Regular user    |A user that is neither Debtor nor Banned |
+| Active User |A user with one Active Reservation|
+| Active Reservation    |A reservation which has not ended yet  |
+| Safe Area   |A parking area defined by the company      |
+| Charging Area |A special Safe Area with electric plugs used to charge the cars     |
+| Personal Information    |Username and password, payment information, driving license |
+| Balance   |Amount of money that user has deposited on his account and can still use to pay      |
+| Passenger |Person in a car that is not driving    |
+| Abandoned Car   |A car that has been parked outside a Safe Area for more than 5 straight hours      |
+| Reserved Car |A car with an Active Reservation     |
+
+
+
 
 
 ###1.4 Reference Documents  
