@@ -209,6 +209,20 @@ In order to fulfill the above specified goals, the system has to provide these f
   
 ____ 
   
+**NAME**: Reserve a car  
+**ACTORS**: Active User  
+**PRECONDITION**: The user must be logged in the app and must be on the homepage. The user must not be tagged as debtor.  
+**EVENT FLOW**:    
+- The user selects "Reserve a car" functionality from the menu: he's prompted to the "reserve a car" page
+- The user selects the desired search area (either entering  a specific address or selecting to use the current position).
+- The user inserts the desired search distance and presses the "search" button. The user is prompted to the "select a car" page.
+- The user selects one of the available cars from the map.
+
+**POSTCONDITION**: The reservation is forwarded to the system. The system tags the selected car as reserved and initialiazes a 1h timeout for that specific car. The user is tagged as active.  
+**EXCEPTION**:  
+- The user enters an invalid distance ( for axample a negative number) or an invalid search address. The reservation is not forwarded and the system asks to enter a valid value.  
+
+____  
 **NAME** : 
   Unlock Reserved car  
 **ACTORS** : 
@@ -242,7 +256,39 @@ ____
 **EXCEPTION** : 
   none
 
+____  
+
+  
+**NAME**: Deposit money to personal balance  
+**ACTORS**: Active User  
+**PRECONDITION**: The user must be logged in the app and must be on the homepage  
+**EVENT FLOW**:  
+- The user selects "Access personal area" functionality from the menu: he's prompted to the "Personal Area"page.
+- He selects "Deposit money" functionality on the "Personal Area" page: he's prompted to the "Deposit Money" page.
+- The user selects the amount of money he wants to deposit from a list of predefined amounts and clicks the "Deposit" button.
+
+**POSTCONDITION**: The system updates the user account balance.  
+**EXCEPTION**:
+- The user tries to deposit more money than he has on his credit card. The system shows the user an error message and the balance is not updated.
+
 ____ 
+
+ 
+**NAME** : Edit personal information  
+**ACTORS**: Active User  
+**PRECONDITION**: The user must be logged in the app and must be on the homepage.  
+**EVENT FLOW**:  
+ - The user selects "Access personal area" functionality from the menu: he's prompted to the personal area page.
+ - He selects "Edit personal information" functionality on the "personal area " page: he's prompted to the Edit personal information page.
+ - The user edits his personal information (such as payment details, email etc.) using a form.
+ - The user presses the "save" button.
+ 
+**POSTCONDITION**: The new personal information is saved in the system.  
+**EXCEPTION**:
+- The user enters invalid payment information or invalid values. The system reverts the changes and asks the user to enter valid infomation.
+
+____
+
 
 **NAME**: Take in charge a vehicle  
 **ACTORS**: Employee  
@@ -275,56 +321,9 @@ ____
 
 **EXCEPTIONS**:  the issue was not solved and the car needs assistance again  
 
-____ 
-
-**NAME**: User reserves a car  
-**ACTORS**: User  
-**PRECONDITION**: The user must be logged in the app and must be on the homepage. The user must not be tagged as debtor.  
-**EVENT FLOW**:    
-- The user selects "Reserve a car" functionality from the menu: he's prompted to the "reserve a car" page
-- The user selects the desired search area (either entering  a specific address or selecting to use the current position).
-- The user inserts the desired search distance and presses the "search" button. The user is prompted to the "select a car" page.
-- The user selects one of the available cars from the map.
-
-**POSTCONDITION**: The reservation is forwarded to the system. The system tags the selected car as reserved and initialiazes a 1h timeout for that specific car. The user is tagged as active.  
-**EXCEPTION**:  
-- The user enters an invalid distance ( for axample a negative number) or an invalid search address. The reservation is not forwarded and the system asks to enter a valid value.  
-
 ____  
-
-**User edits personal information**  
-**NAME** :  User edits personal information  
-**ACTORS**: User  
-**PRECONDITION**: The user must be logged in the app and must be on the homepage.  
-**EVENT FLOW**:  
- - The user selects "Access personal area" functionality from the menu: he's prompted to the personal area page.
- - He selects "Edit personal information" functionality on the "personal area " page: he's prompted to the Edit personal information page.
- - The user edits his personal information (such as payment details, email etc.) using a form.
- - The user presses the "save" button.
  
-**POSTCONDITION**: The new personal information is saved in the system.  
-**EXCEPTION**:
-- The user enters invalid payment information or invalid values. The system reverts the changes and asks the user to enter valid infomation.
-
-____  
-
-**User deposits money to personal balance**  
-**NAME**: User deposits money to personal balance  
-**ACTORS**: User  
-**PRECONDITION**: The user must be logged in the app and must be on the homepage  
-**EVENT FLOW**:  
-- The user selects "Access personal area" functionality from the menu: he's prompted to the "Personal Area"page.
-- He selects "Deposit money" functionality on the "Personal Area" page: he's prompted to the "Deposit Money" page.
-- The user selects the amount of money he wants to deposit from a list of predefined amounts and clicks the "Deposit" button.
-
-**POSTCONDITION**: The system updates the user account balance.  
-**EXCEPTION**:
-- The user tries to deposit more money than he has on his credit card. The system shows the user an error message and the balance is not updated.
-
-____  
-
-**Employee adds a safe parking area**  
-**NAME**: Employee adds safe parking area  
+**NAME**: Add safe parking area  
 **ACTORS**: Employee  
 **PRECONDITION**: The employee must be logged in the system and be on the employee homepage.  
 **EVENT FLOW**:  
@@ -335,9 +334,8 @@ ____
 **EXCEPTION**: None
 
 ____  
-
-**Employee adds a car to the fleet**  
-**NAME**: Employee adds a car to the fleet  
+ 
+**NAME**: Add a car to the fleet  
 **ACTORS**: Employee  
 **PRECONDITION**: The employee must be logged in the system and be on the employee homepage.  
 **EVENT FLOW**:    
