@@ -22,10 +22,12 @@
 ![BalanceController](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/Components/Images/BalanceController.jpg "BalanceController")  
 * INTERFACE:
  * __deposit(payment_provider, amount):__ adds to user's balance the indicated amount of money  
-  * __TransactionException:__ this exception is raised if the transaction fails
+   * __TransactionException:__ this exception is raised if the transaction fails  
+ * __pay(amount):__ subtracts the amount of a bill: if the balance becomes negative, a notification is sent to the user
 * USES: 
  * __databaseController__  
  * __paymentGateway__  
+ * __notificationGateway__
  
 ### Report Controller  
 ![ReportController](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/Components/Images/ReportController.jpg "ReportController")  
@@ -47,8 +49,57 @@
 ![AssistanceController](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/Components/Images/AssistanceController.jpg "AssistanceController")  
 * INTERFACE:  
  * __add(vehicle_id):__ adds the vehicle to the assistance list; it will no longer be available to reservation  
- * __takeInCharge(vehicle_id):__ removes the vehicle from the assitance list as an employee will take care of the car  
+ * __takeInCharge(vehicle_id, employee_id):__ removes the vehicle from the assitance list as an employee will take care of the car  
    * __NotNeedyVehicleException:__ this exception is raised if the vehicle specified is not in the list (i.e. some other employee has taken it in charge while he was choosing what to do)  
  * __solved(vehicle_id):__ updates the database to set the vehicle as available as the issue was solved  
 * USES:  
- * __databaseController:__
+ * __databaseController__  
+ 
+ ### Car Controller  
+![CarController](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/Components/Images/CarController.jpg "CarController")  
+* INTERFACE:  
+  * __unlockCar(user_information):__ checks if the user is near the reserved car, than forwards the unlock command to the car application  
+    * __TooFarException:__ this exception is raised if the user is not close to the car  
+    * __CannotUnlockException:__ this exception is raised if the opening fails  
+  * __getCarData(data_type):__ dialogs with on-board car application to get the specified data, and updates the database   
+* USES:  
+  * __ECUDataCollector__  
+  * __carActuator__  
+  * __databaseController__  
+  
+### Ride Controller  
+![RideController](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/Components/Images/RideController.jpg "RideController")  
+* INTERFACE:  
+  * __startRide():__ starts the monitoring of car during the ride  
+  * __endRide():__ ends the ride, collects all the data to calculate the bill and forwards them to the dedicated component  
+* USES:  
+  * __carController__    
+  * __billController__  
+  
+### Bill Controller  
+![BillController](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/Components/Images/BillController.jpg "BillController")  
+* INTERFACE:  
+  * __calculateBill(ride_info):__ calculates the amount of the bill, than forwards it to the component dedicated to its application  
+  * __applyBill(user_info, amount):__ applies the calculated fee to user's balance  
+* USES:  
+  * __balanceController__  
+  
+### Fault Controller  
+![FaultController](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/Components/Images/FaultController.jpg "FaultController")  
+* INTERFACE:  
+  * __notifyFault(fault_info):__ receives the information regarding some issues detected by on-board application and adds the car to the assistance list  
+* USES:  
+ * __assistanceController__  
+ 
+### Fleet Controller 
+![FleetController](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/Components/Images/FleetController.jpg "FleetController")  
+* INTERFACE:  
+ * __registerCar(car_info):__ adds a new car to the fleet  
+  * __AlreadyRegisteredException:__ this exception is raised if the car is already registered in the fleet  
+ * __dismissCar(car_info):__ removes a car from the fleet  
+* USES:  
+ * __databaseController__  
+
+  
+  
+
