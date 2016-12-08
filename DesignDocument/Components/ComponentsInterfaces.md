@@ -21,9 +21,9 @@
 ### Balance Controller  
 ![BalanceController](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/Components/Images/BalanceController.jpg "BalanceController")  
 * INTERFACE:
- * __deposit(payment_provider, amount):__ adds to user's balance the indicated amount of money  
+ * __deposit(payment_provider, amount, user):__ adds to user's balance the indicated amount of money  
    * __TransactionException:__ this exception is raised if the transaction fails  
- * __pay(amount):__ subtracts the amount of a bill: if the balance becomes negative, a notification is sent to the user
+ * __pay(amount, user):__ subtracts the amount of a bill: if the balance becomes negative, a notification is sent to the user
 * USES: 
  * __databaseController__  
  * __paymentGateway__  
@@ -79,8 +79,7 @@
 ### Bill Controller  
 ![BillController](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/Components/Images/BillController.jpg "BillController")  
 * INTERFACE:  
-  * __calculateBill(ride_info):__ calculates the amount of the bill, than forwards it to the component dedicated to its application  
-  * __applyBill(user_info, amount):__ applies the calculated fee to user's balance  
+  * __calculateBill(ride_info):__ calculates the amount of the bill, than forwards it to the component dedicated to its application    
 * USES:  
   * __balanceController__  
   
