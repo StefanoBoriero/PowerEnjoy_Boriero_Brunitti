@@ -1,3 +1,11 @@
+### Registration Controller
+![RegistrationController](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/Components/Images/RegistrationController.jpg "RegistrationController")  
+* INTERFACE:  
+ * __register(personal_info)__ checks if the informations are valid, then the user is added to the database  
+   * __InvalidInformationException__ this exception is raised if the information are incorrect  
+* USES:  
+ * __databaseController__
+
 
 ### Account Controller
 ![AccountController](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/Components/Images/AccountController.jpg "AccountController")
@@ -99,6 +107,25 @@
 * USES:  
  * __databaseController__  
 
-  
-  
+### Car Application
+![CarAppController](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/Components/Images/CarAppController.jpg "CarAppController")   
+* INTERFACE:  
+ * __getData(data_type)__ gets the required data from the ECU  
+ * __unlock()__ unlocks the car via its actuators  
+* USES:  
+ * __none__  
+ 
+### Payment Gateway  
+![PaymentGateway](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/Components/Images/PaymentGateway.jpg "PaymentGateway")  
+* INTERFACE:  
+ * __forward_payment(payment_info)__ forwards the payment request to the selected payment provider after a deposit has been requested  
+* USES:
+ * __externalPaymentProvider__  
+ 
+### Notification Gateway  
+![NotificationGateway](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/Components/Images/NotificationGateway.jpg "NotificationGateway")  
+* INTERFACE:  
+ * __notify(user, info):__ notifies the user after a relevant event has occurred  
+* USES:
+ * __none__
 
