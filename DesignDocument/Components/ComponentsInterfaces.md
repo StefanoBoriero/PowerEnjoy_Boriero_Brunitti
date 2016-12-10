@@ -108,7 +108,7 @@
  * __databaseController__  
 
 ### Car Application
-![CarAppController](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/Components/Images/CarAppController.jpg "CarAppController")   
+![CarAppController](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/Components/Images/CarApplication.jpg "CarApplication")   
 * INTERFACE:  
  * __getData(data_type)__ gets the required data from the ECU  
  * __unlock()__ unlocks the car via its actuators  
