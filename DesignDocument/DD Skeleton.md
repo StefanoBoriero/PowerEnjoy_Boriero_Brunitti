@@ -41,7 +41,10 @@ release date: December 11th, 2016
 <p style="page-break-before:always;"></p>
 
 #1 Introduction   
-###1.1 Purpose 
+###1.1 Purpose  
+The purpose of this document is to present the architectural structure of the system that is going to be developed. First an overview of high level components is going to be provided, then more detailed views are going to descibe the low level interaction between thi components. Runtime views will describe how this interaction take place in real time situation. A brief summary of the architectural styles and decisions that have been made will end the first part of the document, followed by the design of the main algorithms.  
+User interface is presented using both a formal notation with UX diagrams and visual mock-ups.  
+Requirements traceability will close the document explaining how the requirements highlited in the RASD are going to be fulfilled by the designed architecture.  
 ###1.2 Scope 
 ###1.3 Glossary 
 ###1.4 Reference Documents 
