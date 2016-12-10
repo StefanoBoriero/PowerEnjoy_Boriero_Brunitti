@@ -72,7 +72,15 @@ ____
 (https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/SequenceDiagrams/Unlock_car_sequence_diagram.jpg
 "UnlockCar")
 ####Description
-When the client selects to navigate to the unlock car page, the Client Application will display a page containing an «unlock car» button. If the user presses this button, the client will get the current device position and send a request to unlock the reserved car  to the Car Controller using the Client Dispatcher. When the Car Controller receives this request, it will query the DB to ask for the car that has been reserved by that particular user (if a reservation exists). If a reservation has been made, the Car Controller will compare the two sets of  coordinates and check if the car can be unlocked. If this is the case, the Car Controller will update the status off the car in the DB and wiil finally unlock the car, sending a message to the Car Application. Finally, the Client Application will display a message outlining the outcome of the operation.
+When the client selects to navigate to the unlock car page, the Client Application will display a page containing an «unlock car» button. If the user presses this button, the client will get the current device position and send a request to unlock the reserved car  to the Car Controller using the Client Dispatcher. When the Car Controller receives this request, it will query the DB to ask for the car that has been reserved by that particular user (if a reservation exists). If a reservation has been made, the Car Controller will compare the two sets of  coordinates and check if the car can be unlocked. If this is the case, the Car Controller will update the status off the car in the DB and wiil finally unlock the car, sending a message to the Car Application. Finally, the Client Application will display a message outlining the outcome of the operation.  
+____  
+#### End Ride  
+![EndRide]
+(https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/SequenceDiagrams/endRideSequence.jpg
+"End of Ride")  
+####Description  
+When engine stops, the on-board car application sends a notification to the server throught the CarAppDispatcher. The RideController will collect all the information regarding the ride using the CarController. If the ride has actually ended (i.e. the car has been parked in a safe area or has been abandoned) the RideController will delegate the calculation of the bill to BillController. When the BillController receives the request, it will calculate the import of the bill according ti company policy, check if any discount is applicable than delegate the payment to BalanceController. This component will query the database to get user's current balance and update it. If after the update the balance is negative, user's status is updated to debtor and a notification is sent to her.
+
 
 ####2.4.2 State Diagrams
 ![UserStatus]
