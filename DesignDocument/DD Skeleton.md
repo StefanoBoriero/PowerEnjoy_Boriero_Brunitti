@@ -47,7 +47,8 @@ release date: December 11th, 2016
 ###1.4 Reference Documents 
 #2 Architectural design 
 ###2.1 Overview  
-###2.2 Component view 
+###2.2 Component view  
+![ComponentInterfaces](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/Components/ComponentsInterfaces.md "ComponentsInt")  
 ###2.3 Deployment view 
 ###2.4 Runtime view 
 ####2.4.1 Sequence Diagrams
