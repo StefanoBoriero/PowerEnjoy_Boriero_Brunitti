@@ -8,7 +8,7 @@ Design Document
 ###Boriero Stefano  876106  
 ###Brunitti Simone   875039  
 version: 1.0  
-release date: November 11th, 2016
+release date: December 11th, 2016
 ********
 <p style="page-break-before:always;"></p>
 
