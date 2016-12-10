@@ -1,3 +1,11 @@
+### Customer Login
+![UnlockCar]
+(https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/SequenceDiagrams/login%20sequence%20diagram%20alternative%20version.jpg
+"CustomerLogin")
+##Description
+When the user inputs his login credentials in the application, the application must compare this information with the one contained in the database. To do so, the application sends a request to the Client Dispatcher, which transfers the request to the Account Controller. The Account Controller queries the database to retrieve the password corresponding to the input username and subsequently compares the two passwords. If the comparison is positive, the account controller retrieves the user status and sends it to the application. Finallly, the application shows the client a different screen depending on the user status (if the client is a debtor he can't reserve, so that button will be disabled). 
+
+____
 ### Reserve a car
 ![ReserveCar]
 (https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/SequenceDiagrams/Client_reservation_sequence.jpg
