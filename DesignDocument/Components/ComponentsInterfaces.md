@@ -129,3 +129,30 @@
 * USES:
  * __none__
 
+### Client Dispatcher  
+![ClientDispatcher](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/Components/Images/ClientDispatcher.jpg "ClientDispatcher")  
+* INTERFACE:  
+  * __dispatch_request(request_info):__ forwards client's request to the dedicated component  
+* USES:  
+  * __registrationController__  
+  * __accountController__  
+  * __reservationController__  
+  * __balanceController__  
+  * __reportController__  
+
+### Employee Dispatcher
+![EmployeeDispatcher](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/Components/Images/EmployeeDispatcher.jpg "EmployeeDispatcher") 
+* INTERFACE:  
+  * __dispatchRequest(request_info):__ forwards employee's request to the dedicated component  
+* USES:  
+  * __safeAreaController__  
+  * __assistanceController__  
+
+### CarApp Dispatcher  
+![CarAppDispatcher](https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti/blob/master/DesignDocument/Components/Images/CarAppDispatcher.jpg "CarAppDispatcher")  
+* INTERFACE:  
+  * __dispatchRequest(request_info):__ forwards request of car application to the dedicated component  
+* USES:  
+  * __fleetController__  
+  * __faultController__  
+  * __rideController__  
