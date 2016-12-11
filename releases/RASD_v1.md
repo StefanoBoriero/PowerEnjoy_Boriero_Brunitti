@@ -166,36 +166,36 @@ The on-board android device has to interface with the Electric Control Unit in o
 ####3.2.1 Requirements  
 In order to fulfill the above specified goals, the system has to provide these functionalities:  
 - G1 Enable Regular users to reserve a car  
-	- System is able to distinguish between Regular and non-Regular users  
-	- System allows user to define search area (specific address or current position)  
-	- System is able to retrieve user current position  
-	- System is able to detect available cars within a specified area  
-	- System is able to tag a car as reserved  
+	- R.1.1 System is able to distinguish between Regular and non-Regular users  
+	- R.1.2 System allows user to define search area (specific address or current position)  
+	- R.1.3 System is able to retrieve user current position  
+	- R.1.4 System is able to detect available cars within a specified area  
+	- R.1.5 System is able to tag a car as reserved  
 - G2 Unlock a reserved car  
-	- System is able to retrieve user current position  
-	- System is able to check if user is near the current reserved car  
-	- System is able to unlock a car remotely  
+	- R.2.1 System is able to retrieve user current position  
+	- R.2.2 System is able to check if user is near the current reserved car  
+	- R.2.3 System is able to unlock a car remotely  
 - G3 Deposit money
-	- System is able to interface with an external payment provider  
+	- R.3.1 System is able to interface with an external payment provider  
 - G4 Enable employee to easily detect cars that need assistance  
-	- System is able to detect if a car is in outside a safe area  
-	- System is able to detect if a car has low battery   
-	- System allows employee to access an assistance list containing all cars that need assistance  
-	- System is able to notify the employee if a new car is added to the assistance list  
-	- System allows employee to take charge of a car in assistance list  
-	- System is able to tag car as TookInCharge  
-	- System allows employees to register a new car in the fleet  
-	- System allows employees to remove a car from the fleet  
+	- R.4.1 System is able to detect if a car is in outside a safe area  
+	- R.4.2 System is able to detect if a car has low battery   
+	- R.4.3 System allows employee to access an assistance list containing all cars that need assistance  
+	- R.4.4 System is able to notify the employee if a new car is added to the assistance list  
+	- R.4.5 System allows employee to take charge of a car in assistance list  
+	- R.4.6 System is able to tag car as TookInCharge  
+	- R.4.7 System allows employees to register a new car in the fleet  
+	- R.4.8 System allows employees to remove a car from the fleet  
 - G5 Define the set of safe areas  
-	- System allows employees to define a safe area on a map corresponding to a real world safe area  
+	- R.5.1 System allows employees to define a safe area on a map corresponding to a real world safe area  
 - G6 Discourage bad usage of the services
-	- System is able to tag user as a debtor if his balance is negative  
-	- System is able to disable reservation functions for debtors  
-	- Notify the user if he has been tagged as debtor  
-	- System Is able to charge 30% more on the ride if the car is left more than 3 km from the nearest power station or left with less than 20% battery  
-	- System is able to charge 1 EUR to a user who doesn't pick up the car before the given timer expires  
-	- System is able to tag a user who infringed the rules as Signalled user  
-	- System is able to ban a fraudulent user preventing him to access the services  
+	- R.6.1 System is able to tag user as a debtor if his balance is negative  
+	- R.6.2 System is able to disable reservation functions for debtors  
+	- R.6.3 Notify the user if he has been tagged as debtor  
+	- R.6.4 System Is able to charge 30% more on the ride if the car is left more than 3 km from the nearest power station or left with less than 20% battery  
+	- R.6.5 System is able to charge 1 EUR to a user who doesn't pick up the car before the given timer expires  
+	- R.6.6 System is able to tag a user who infringed the rules as Signalled user  
+	- R.6.7 System is able to ban a fraudulent user preventing him to access the services  
 
 
 
@@ -707,3 +707,5 @@ Boriero Stefano:
 Total time: 28:30 hours
 
 
+#Changelog
+* __11/12/2016__ Changed requirements notation to enable references in traceability matrix
