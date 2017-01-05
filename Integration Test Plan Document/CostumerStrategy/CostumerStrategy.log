@@ -1,0 +1,297 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.3)  5 JAN 2017 13:39
+entering extended mode
+**./CostumerStrategy.tex
+(CostumerStrategy.tex
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\adjustbox.sty"
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks15
+\XKV@tempa@toks=\toks16
+)
+\XKV@depth=\count88
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\adjcalc.sty"
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\trimclip.sty"
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\collectbox\collectbox.sty"
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box26
+)
+\tc@llx=\dimen105
+\tc@lly=\dimen106
+\tc@urx=\dimen107
+\tc@ury=\dimen108
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\tc-pdftex.def"
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen109
+\adjbox@Height=\dimen110
+\adjbox@Depth=\dimen111
+\adjbox@Totalheight=\dimen112
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty"
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count89
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\varwidth.sty"
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box27
+\sift@deathcycles=\count90
+\@vwid@loff=\dimen113
+\@vwid@roff=\dimen114
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count91
+\float@exts=\toks17
+\float@box=\box28
+\@float@everytoks=\toks18
+\@floatcapt=\box29
+) (CostumerStrategy.aux)
+\openout1 = `CostumerStrategy.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count92
+\scratchdimen=\dimen115
+\scratchbox=\box30
+\nofMPsegments=\count93
+\nofMParguments=\count94
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count95
+\MPscratchDim=\dimen116
+\MPnumerator=\count96
+\makeMPintoPDFobject=\count97
+\everyMPtoPDFconversion=\toks20
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 20--22
+
+ []
+
+<Images/Reservation/UnlockIntegration.png, id=1, 202.50656pt x 106.14656pt>
+File: Images/Reservation/UnlockIntegration.png Graphic file (type png)
+
+<use Images/Reservation/UnlockIntegration.png>
+Package pdftex.def Info: Images/Reservation/UnlockIntegration.png used on input
+ line 28.
+(pdftex.def)             Requested size: 202.50604pt x 106.1463pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--30
+
+ []
+
+<Images/Reservation/TimerIntegration.png, id=2, 206.27063pt x 36.88782pt>
+File: Images/Reservation/TimerIntegration.png Graphic file (type png)
+
+<use Images/Reservation/TimerIntegration.png>
+Package pdftex.def Info: Images/Reservation/TimerIntegration.png used on input 
+line 34.
+(pdftex.def)             Requested size: 206.27011pt x 36.88771pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--36
+
+ []
+
+
+<Images/Reservation/ReservatorIntegration.png, id=3, 202.50656pt x 94.10156pt>
+File: Images/Reservation/ReservatorIntegration.png Graphic file (type png)
+
+<use Images/Reservation/ReservatorIntegration.png>
+Package pdftex.def Info: Images/Reservation/ReservatorIntegration.png used on i
+nput line 41.
+(pdftex.def)             Requested size: 202.50604pt x 94.10132pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--43
+
+ []
+
+[1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./Images/Reservation/Unlo
+ckIntegration.png> <./Images/Reservation/TimerIntegration.png>]
+<Images/Reservation/AvailableIntegration.png, id=11, 202.50656pt x 36.88782pt>
+File: Images/Reservation/AvailableIntegration.png Graphic file (type png)
+
+<use Images/Reservation/AvailableIntegration.png>
+Package pdftex.def Info: Images/Reservation/AvailableIntegration.png used on in
+put line 47.
+(pdftex.def)             Requested size: 202.50604pt x 36.88771pt.
+
+<Images/Reservation/ReservationControllerStrategy.png, id=12, 206.27063pt x 225
+.84375pt>
+File: Images/Reservation/ReservationControllerStrategy.png Graphic file (type p
+ng)
+ <use Images/Reservation/ReservationControllerStrategy.png>
+Package pdftex.def Info: Images/Reservation/ReservationControllerStrategy.png u
+sed on input line 53.
+(pdftex.def)             Requested size: 206.27011pt x 225.84319pt.
+
+<Images/Balance/ManagerIntegration.png, id=13, 201.00093pt x 94.10156pt>
+File: Images/Balance/ManagerIntegration.png Graphic file (type png)
+
+<use Images/Balance/ManagerIntegration.png>
+Package pdftex.def Info: Images/Balance/ManagerIntegration.png used on input li
+ne 62.
+(pdftex.def)             Requested size: 201.00043pt x 94.10132pt.
+ [2 <./Images/Reservation/ReservatorIntegration.png> <./Images/Reservation/Avai
+lableIntegration.png> <./Images/Reservation/ReservationControllerStrategy.png>]
+
+<Images/Balance/TransactionIntegration.png, id=17, 201.00093pt x 94.10156pt>
+File: Images/Balance/TransactionIntegration.png Graphic file (type png)
+
+<use Images/Balance/TransactionIntegration.png>
+Package pdftex.def Info: Images/Balance/TransactionIntegration.png used on inpu
+t line 67.
+(pdftex.def)             Requested size: 201.00043pt x 94.10132pt.
+
+<Images/Balance/BalanceControllerStrategy.png, id=18, 185.19188pt x 152.06813pt
+>
+File: Images/Balance/BalanceControllerStrategy.png Graphic file (type png)
+ <use Images/Balance/BalanceControllerStrategy.png>
+Package pdftex.def Info: Images/Balance/BalanceControllerStrategy.png used on i
+nput line 73.
+(pdftex.def)             Requested size: 185.1914pt x 152.06775pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--75
+
+ []
+
+[3 <./Images/Balance/ManagerIntegration.png> <./Images/Balance/TransactionInteg
+ration.png> <./Images/Balance/BalanceControllerStrategy.png>]
+(CostumerStrategy.aux) ) 
+Here is how much of TeX's memory you used:
+ 2298 strings out of 493333
+ 35131 string characters out of 3139189
+ 94543 words of memory out of 3000000
+ 5798 multiletter control sequences out of 15000+200000
+ 5158 words of font info for 19 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 40i,7n,37p,252b,268s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
+x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on CostumerStrategy.pdf (3 pages, 68579 bytes).
+PDF statistics:
+ 32 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+
