@@ -1,0 +1,59 @@
+\begin{Large}
+\textbf{BalanceController}
+\end{Large}
+
+\textbf{BalanceManager, DatabaseController, NotificationForwarder, InfractionManager} \\
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{pay(user-id, amount)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+Non existing user, Any & InvalidUserException is raised \\
+
+\hline
+Existing user, Non-positive value & InvalidArgumentException is raised \\
+
+\hline
+Existing user, More than deposited & Database entry is updated, NotificationForwarder and InfractionManager proper functions are called \\
+
+\hline
+Existing user, Positive value & Database entry is updated \\
+
+\hline
+\multicolumn{2}{|c|}{deposit(user-id, amount)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+Debtor user, More than debt & Database entry is updated, InfractionManager proper function is called \\
+
+\hline
+Regular user, Positive value & Database entry is updated \\
+\hline
+\end{tabular}
+
+\textbf{TransactionProcessor, PaymentForwarder, BalanceManager} \\
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{deposit(payment-info, amount, user-id)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+Any, Any, Non existing user & InvalidUserException is raised \\
+
+\hline
+Invalid info, Any, Existing user & TransactionExeption is raised \\
+
+\hline
+Valid info, Non-positive value, Existing user & InvalidArgumentException is raised\\
+
+\hline
+Valid info, Positive value more than affordable, Existing user & TransactionException is raised\\
+
+\hline
+Valid info, Positive value less than affordable, Existing user & BalanceManager deposit function is called \\
+\hline
+\end{tabular}

@@ -1,0 +1,76 @@
+\begin{Large}
+\textbf{AccountController}
+\end{Large}
+
+\textbf{InfractionManager, DatabaseController, BalanceManager} \\
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{signal-infraction(infraction, user-id)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+Any, Non existing user & InvalidUserException is raised \\
+
+\hline
+MissedPickUp, Existing user & Database entry is updated and BalanceManager pay function is called \\
+
+\hline
+AbandonedCar, Existing user & Database entry is updated and BalanceManager pay function is called \\
+
+\hline
+Debt, Existing user & Database entry is updated \\
+\hline
+\end{tabular}
+
+\textbf{LoginManager, DatabaseController} \\
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{login(username, password)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+Non existing user, Any & InvalidCredentialException is raised \\
+
+\hline
+Existing user, Wrong password & InvalidCredentialException is raised \\
+
+\hline
+Existing user, Correct password & Login is granted \\
+\hline
+\end{tabular}
+
+\textbf{PersonalInformationEditor, PaymentInformationValidator, DrivingLicenseValidator, DatabaseController} \\
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{edit-personal-info(user-info, user-id)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+Any, Non existing user & InvalidUserException is raised \\
+
+\hline
+Invalid info, Existing user & Proper PaymentInformationValidator and DrivingLicenseValidator functions are called and database entry is not updated \\
+
+\hline
+Valid info, Existing user & Proper PaymentInformationValidator and DrivingLicenseValidator functions are called and database entry is updated \\
+\hline
+\end{tabular}
+
+
+\textbf{PersonalInformationRetriever, DatabaseController}\\
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{get-personal-info(user-id)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+Non existing user & InvalidUserException is raised \\
+
+\hline
+Existing user & User's information is got from the database \\
+\hline
+\end{tabular}
