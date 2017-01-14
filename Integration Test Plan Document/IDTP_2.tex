@@ -130,7 +130,7 @@ Then we will integrate the Car Actuator Manager with the Car Actuator Stub.
 \end{figure}
 \textbf{RideController}
 \\
-For the RideController, we will once more use some stubs. As a matter of fact, we first start integrating the Ride Ender with the Bill Calculator Stub and the Infraction Manager Stub
+For the RideController, we will once more use some stubs. As a matter of fact, we first start integrating the Ride Ender with the Bill Manager and the Infraction Manager Stub
 \begin{figure}[H]
 \includegraphics[scale=0.5]{RideController/RideController1}
 \centering
@@ -147,17 +147,7 @@ This is the final integrated RideController module
 \end{figure}
 \textbf{BillController}
 \\
-In testing the BillController, we first integrate the Bill Applicator with a Bill Manager Stub
-\begin{figure}[H]
-\includegraphics[scale=0.5]{BillController/BillController1}
-\centering
-\end{figure}
-Then, we integrate the Bill Calculator with the Bill Applicator we just tested
-\begin{figure}[H]
-\includegraphics[scale=0.5]{BillController/BillController2}
-\centering
-\end{figure}
-This is the final result of the BillController integration
+In testing the BillController, we must integrate the Bill Manager with the Balance Manager
 \begin{figure}[H]
 \includegraphics[scale=0.5]{BillController/BillControllerFinal}
 \centering
@@ -481,7 +471,7 @@ The final step of the Car System integration is to integrate all the modules in 
   Nothing & The car is unlocked \\
   \hline
 \end{tabular}
-\subsubsection{Ride Ender - Bill Calculator}
+\subsubsection{Ride Ender - Bill Manager}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{calculate-bill(ride-info)} \\
@@ -525,7 +515,7 @@ The final step of the Car System integration is to integrate all the modules in 
    Valid data-type, Valid vehicle-id & Returns the specified data and updates the database\\
   \hline
 \end{tabular}
-\subsubsection{Bill Applicator - Balance Manager }
+\subsubsection{Bill Manager - Balance Manager }
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{pay(amount,user)} \\
@@ -604,6 +594,17 @@ The final step of the Car System integration is to integrate all the modules in 
   \hline
 \end{tabular}
 \subsubsection{Data Analyzer - Communication Manager}
+\begin{tabular}{ |p{5cm}|p{7cm}| }
+  \hline
+  \multicolumn{2}{|c|}{send-fault()} \\
+  \hline
+  \textbf{Input} & \textbf{Effect} \\
+  \hline
+  Nothing but the communication fails & FailedCommunicationException is raised\\
+  \hline
+  Nothing & A fault notification is sent\\
+  \hline
+\end{tabular}
 \subsubsection{Communication Manager - Car App Dispatcher}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
@@ -771,13 +772,11 @@ Here is a list of drivers we will use: \\\\
   \hline
  Car Actuator Manager Driver  & Car Actuator\\
   \hline
-  Ride Ender Driver & Bill Calculator and Infraction Manager\\
+  Ride Ender Driver & Bill Manager and Infraction Manager\\
   \hline
   Ride Manager Driver & Car Data Retriever and Ride Ender\\
   \hline
-  Bill Applicator Driver & Balance Manager\\
-  \hline
-  Bill Calculator Driver & Bill Applicator\\
+  Bill Manager Driver & Balance Manager\\
   \hline
   Fault Manager Driver & Assistance List Manager\\
   \hline
