@@ -204,7 +204,7 @@ The final step of the Car System integration is to integrate all the modules in 
 \newpage
 \section{Individual Steps and Test Description}
 \subsection{Employee Subsystem}
-\subsubsection{Safe Area Editor - Database Controller}
+\subsubsection{I1 Safe Area Editor - Database Controller}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{create-safe-area(boundaries)} \\
@@ -224,7 +224,7 @@ The final step of the Car System integration is to integrate all the modules in 
   List containing all valid boundaries & The database is updated to include the new safe area\\
   \hline
 \end{tabular}
-\subsubsection{Safe Area Manager - Database Controller}
+\subsubsection{I2 Safe Area Manager - Database Controller}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{get-safe-areas()} \\
@@ -234,7 +234,7 @@ The final step of the Car System integration is to integrate all the modules in 
   Nothing & Return a list of all the safe areas\\
   \hline
 \end{tabular}
-\subsubsection{Assitance List - Database Controller}
+\subsubsection{I4 Assitance List - Database Controller}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{add(vehicle-id)} \\
@@ -293,7 +293,7 @@ The final step of the Car System integration is to integrate all the modules in 
   Valid vehicle, valid employee-id & Remove the vehicle from the assistance list and assigns it to that employee\\
   \hline
 \end{tabular}
-\subsubsection{Assistance List Manager - Assistance List}
+\subsubsection{I5 Assistance List Manager - Assistance List}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{addVehicle(vehicle-id)} \\
@@ -304,12 +304,12 @@ The final step of the Car System integration is to integrate all the modules in 
   \hline
   Vehicle already present in the assistance list & AlreadyNeedyException is raised\\
   \hline
-  Vehicle that is not in the database (i.e. it has not been registered in the fleet) & InvalidVehicleException is raised\\
+  Vehicle that is not in the database (i.e. it has not been registered in the fleet) & InvalidArgumentException is raised\\
   \hline
   Valid vehicle & Add the vehicle to the assistance list and sets it as unavailable\\
   \hline
 \end{tabular}
-\subsubsection{Assitance List Manager - Notification Forwarder}
+\subsubsection{I6 Assitance List Manager - Notification Forwarder}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{notify(user,info)} \\
@@ -323,7 +323,7 @@ The final step of the Car System integration is to integrate all the modules in 
   Valid user, Valid info & A notification containing the specified info is sent to the specified user\\
   \hline
 \end{tabular}
-\subsubsection{Employee Dispatcher - Safe Area Controller}
+\subsubsection{I7 Employee Dispatcher - Safe Area Controller}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{create-safe-area(boundaries)} \\
@@ -353,7 +353,7 @@ The final step of the Car System integration is to integrate all the modules in 
   Nothing & Return a list of all the safe areas\\
   \hline
 \end{tabular}
-\subsubsection{Employee Dispatcher - Assistance Controller}
+\subsubsection{I8 Employee Dispatcher - Assistance Controller}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{solved(vehicle-id)} \\
@@ -397,7 +397,7 @@ The final step of the Car System integration is to integrate all the modules in 
   Valid vehicle, valid employee-id & Remove the vehicle from the assistance list and assigns it to that employee\\
   \hline
 \end{tabular}
-\subsubsection{Employee WebApp - Employee Dispatcher}
+\subsubsection{I9 Employee WebApp - Employee Dispatcher}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{dispatch-request(request-info)} \\
@@ -406,13 +406,13 @@ The final step of the Car System integration is to integrate all the modules in 
   \hline
   Null parameter & NullArgumentException is raised\\
   \hline
-  Invalid request & InvalidRequestException is raised \\
+  Invalid request & InvalidArgumentException is raised \\
   \hline
   Valid request & Forwards employee's request to the dedicated component\\
   \hline
 \end{tabular}
 \subsection{Car Subsystem}
-\subsubsection{Car Data Retriever - Database Controller}
+\subsubsection{I10 Car Data Retriever - Database Controller}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{update-car-data(data-type, vehicle-id)} \\
@@ -421,9 +421,9 @@ The final step of the Car System integration is to integrate all the modules in 
   \hline
   Any of the two is a Null parameter & NullArgumentException is raised\\
   \hline
-  Invalid data-type, Any & InvalidDataRequestException is raised\\
+  Invalid data-type, Any & InvalidArgumentException is raised\\
   \hline
-  Any, Vehicle that is not in the database (i.e. it has not been registered in the fleet) & InvalidVehicleException is raised\\
+  Any, Vehicle that is not in the database (i.e. it has not been registered in the fleet) & InvalidArgumentException is raised\\
   \hline
    Valid data-type, Valid vehicle-id & Updates car data in the database\\
   \hline
@@ -439,12 +439,12 @@ The final step of the Car System integration is to integrate all the modules in 
   \hline
   Invalid data-type, Any & InvalidArgumentException is raised\\
   \hline
-  Any, Vehicle that is not in the database (i.e. it has not been registered in the fleet) & InvalidVehicleException is raised\\
+  Any, Vehicle that is not in the database (i.e. it has not been registered in the fleet) & InvalidArgumentException is raised\\
   \hline
    Valid data-type, Valid vehicle-id & Returns the requested data getting it from the database\\
   \hline
 \end{tabular}
-\subsubsection{Car Data Retriever - ECU Data Collector}
+\subsubsection{I11 Car Data Retriever - ECU Data Collector}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{get-data(data-type)} \\
@@ -460,7 +460,7 @@ The final step of the Car System integration is to integrate all the modules in 
    Valid data-type & Dialogs with the on-board car application to get the specified data\\
   \hline
 \end{tabular}
-\subsubsection{Car Actuator Manager - Car Actuator}
+\subsubsection{I12 Car Actuator Manager - Car Actuator}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{unlock()} \\
@@ -472,7 +472,7 @@ The final step of the Car System integration is to integrate all the modules in 
   Nothing & The car is unlocked \\
   \hline
 \end{tabular}
-\subsubsection{Ride Ender - Bill Manager}
+\subsubsection{I13 Ride Ender - Bill Manager}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{calculate-bill(ride-info)} \\
@@ -486,7 +486,7 @@ The final step of the Car System integration is to integrate all the modules in 
   Vaild ride-info & Calculate the amount of the bill\\
   \hline
 \end{tabular}
-\subsubsection{Ride Ender - Infraction Manager}
+\subsubsection{I14 Ride Ender - Infraction Manager}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{signal-infraction(infraction-info)} \\
@@ -500,7 +500,7 @@ The final step of the Car System integration is to integrate all the modules in 
   Vaild infraction-info & Change the user's status as signalled in the database\\
   \hline
 \end{tabular}
-\subsubsection{Ride Monitor - Car Data Retriever }
+\subsubsection{I15 Ride Manager - Car Data Retriever }
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{get-car-data(data-type, vehicle-id)} \\
@@ -516,7 +516,7 @@ The final step of the Car System integration is to integrate all the modules in 
    Valid data-type, Valid vehicle-id & Returns the specified data and updates the database\\
   \hline
 \end{tabular}
-\subsubsection{Bill Manager - Balance Manager }
+\subsubsection{I17 Bill Manager - Balance Manager }
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{pay(amount,user)} \\
@@ -532,7 +532,7 @@ The final step of the Car System integration is to integrate all the modules in 
    Valid amount, Valid user & The amount is subracted from the user balance\\
   \hline
 \end{tabular}
-\subsubsection{Fault Manager - Assistant List Manager}
+\subsubsection{I18 Fault Manager - Assistant List Manager}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{add(vehicle-id)} \\
@@ -543,12 +543,12 @@ The final step of the Car System integration is to integrate all the modules in 
   \hline
   Vehicle already present in the assistance list & AlreadyNeedyException is raised\\
   \hline
-  Vehicle that is not in the database (i.e. it has not been registered in the fleet) & InvalidVehicleException is raised\\
+  Vehicle that is not in the database (i.e. it has not been registered in the fleet) & InvalidArgumentException is raised\\
   \hline
   Valid vehicle & Add the vehicle to the assistance list and sets it as unavailable\\
   \hline
 \end{tabular}
-\subsubsection{Registration Manager - Database Controller }
+\subsubsection{I19 Registration Manager - Database Controller }
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{register-car(car-info)} \\
@@ -564,7 +564,7 @@ The final step of the Car System integration is to integrate all the modules in 
   Valid car-info & Add the vehicle to the database and to the fleet\\
   \hline
 \end{tabular}
-\subsubsection{Dismission Manager - Database Controller }
+\subsubsection{I20 Dismission Manager - Database Controller }
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{dismiss-car(car-info)} \\
@@ -580,7 +580,7 @@ The final step of the Car System integration is to integrate all the modules in 
   Valid car-info & Dismiss the vehicle from the fleet and delete it from the database\\
   \hline
 \end{tabular}
-\subsubsection{Data Analyzer - ECU Data Collector}
+\subsubsection{I21 Data Analyzer - ECU Data Collector}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{get-data(data-type)} \\
@@ -594,7 +594,7 @@ The final step of the Car System integration is to integrate all the modules in 
    Valid data-type & Get the specified data from the ECU Data Collector\\
   \hline
 \end{tabular}
-\subsubsection{Data Analyzer - Communication Manager}
+\subsubsection{I22 Data Analyzer - Communication Manager}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{send-fault()} \\
@@ -606,7 +606,7 @@ The final step of the Car System integration is to integrate all the modules in 
   Nothing & A fault notification is sent\\
   \hline
 \end{tabular}
-\subsubsection{Communication Manager - Car App Dispatcher}
+\subsubsection{I23 Communication Manager - Car App Dispatcher}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{dispatch-request(request-info)} \\
@@ -615,12 +615,26 @@ The final step of the Car System integration is to integrate all the modules in 
   \hline
   Null parameter & NullArgumentException is raised\\
   \hline
-  Invalid request & InvalidRequestException is raised \\
+  Invalid request & InvalidArgumentException is raised \\
   \hline
   Valid request & Forwards the car application request to the dedicated component\\
   \hline
 \end{tabular}
-\subsubsection{Car App Dispatcher - Ride Monitor}
+\subsubsection{I24 Fleet Registrator - Communication Manager}
+\begin{tabular}{ |p{5cm}|p{7cm}| }
+  \hline
+  \multicolumn{2}{|c|}{send-registration-request(vehicle-info)} \\
+  \hline
+  \textbf{Input} & \textbf{Effect} \\
+  \hline
+  Invalid vehicle-info & InvalidArgumentException is raised\\
+  \hline
+  Valid vehicle-info but the communication fails & FailedCommunicationException is raised\\
+  \hline
+  Nothing & A registration request is sent\\
+  \hline
+\end{tabular}
+\subsubsection{I25 Car App Dispatcher - Ride Manager}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{start-ride(vehicle-id)} \\
@@ -649,7 +663,7 @@ The final step of the Car System integration is to integrate all the modules in 
  Valid ride-info & The Ride Monitor is aware of the fact that the ride ended, calculate the bill and forward it to the dedicated component \\
   \hline
 \end{tabular}
-\subsubsection{Car App Dispatcher - Fault Manager}
+\subsubsection{I26 Car App Dispatcher - Fault Manager}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{notify-fault(fault-info)} \\
@@ -663,7 +677,7 @@ The final step of the Car System integration is to integrate all the modules in 
   Valid fault-info & Forwards the fault-info to the employee system by means of a notification\\
   \hline
 \end{tabular}
-\subsubsection{Car App Dispatcher - Registration Manager}
+\subsubsection{I27 Car App Dispatcher - Registration Manager}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{register-car(car-info)} \\
@@ -679,7 +693,7 @@ The final step of the Car System integration is to integrate all the modules in 
   Valid car-info & Add the vehicle to the database and to the fleet\\
   \hline
 \end{tabular}
-\subsubsection{Car App Dispatcher - Dismission Manager}
+\subsubsection{I28 Car App Dispatcher - Dismission Manager}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|c|}{dismiss-car(car-info)} \\
