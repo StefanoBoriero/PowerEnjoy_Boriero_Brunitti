@@ -1,0 +1,17 @@
+\subsubsection{ClientWebApp-ClientDispatcher}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{dispatch-request(request-info)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+Null parameter & NullArgumentException is raised \\
+
+\hline
+Invalid request & InvalidRequestException is raised \\
+
+\hline
+Valid request & Forwards customer’s request to the dedicated component \\
+\hline
+\end{tabular}

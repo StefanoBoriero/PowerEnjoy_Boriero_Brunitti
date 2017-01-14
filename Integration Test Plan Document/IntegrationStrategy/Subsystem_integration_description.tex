@@ -1,0 +1,70 @@
+\subsubsection{Customer subsystem - Employee subsystem}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{add(vehicle-id)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Valid id & Vehicle is added to the AssistanceList \\
+\hline
+\end{tabular}
+\\
+
+\subsubsection{Customer subsystem - Car subsystem}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{unlock(vehicle-id)}\\
+\hline
+\textbf{Input} & \textbf{Effect}\\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Unlockable vehicle-id & Right function is called\\
+\hline
+\end{tabular}
+
+\subsubsection{Car subsystem - Customer subsystem}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{pay(user-id, amount)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Non existing user, Any & InvalidUserException is raised \\
+
+\hline
+Existing user, Non-positive value & InvalidArgumentException is raised \\
+
+\hline
+Existing user, more than deposited & Database entry is updated and DebtException is raised \\
+
+\hline
+Existing user, Positive value & Database entry is updated and DebtException is raised \\
+\hline
+\end{tabular}
+
+\subsubsection{Car subsystem - Employee subsystem}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{add(vehicle-id)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Valid id & Vehicle is added to the AssistanceList \\
+\hline
+\end{tabular}
+\\
