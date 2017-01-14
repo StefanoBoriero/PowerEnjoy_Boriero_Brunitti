@@ -51,7 +51,7 @@ Brunitti Simone   875039 }
 \subsubsection{Employee System Strategy}
 \end{Large}
 
-For testing the Employee System, we will keep using a bottom-up strategy. These are the separate modules we are going to test: 
+For testing the Employee System, we will use a bottom-up strategy. These are the separate modules we are going to test: 
 \begin{enumerate}
 \item SafeAreaController
 \item AssistanceController
@@ -118,24 +118,24 @@ In this paragraph we are going to test the System that we will develop for manag
 
 \textbf{CarContoller}
 \\
-While integrating the CarController, we will make use of two stubs that will simulate the behaviour of some parts of the real car. These stubs are the ECU Data Collector and the Car Actuator stubs. The strategy we will adopt in order to integrate this subsystem is the following: first, we test the Car Data Retriever with the Database Controller and the ECU Data collector stub
+The strategy we will adopt in order to integrate this subsystem is the following: first, we test the Car Data Retriever with the Database Controller and the ECU Data Collector.
 \begin{figure}[H]
 \includegraphics[scale=0.5]{CarController/CarController1}
 \centering
 \end{figure}
-Then we will integrate the Car Actuator Manager with the Car Actuator Stub.
+Then we will integrate the Car Actuator Manager with the Car Actuator.
 \begin{figure}[H]
 \includegraphics[scale=0.5]{CarController/CarController2}
 \centering
 \end{figure}
 \textbf{RideController}
 \\
-For the RideController, we will once more use some stubs. As a matter of fact, we first start integrating the Ride Ender with the Bill Manager and the Infraction Manager Stub
+For the RideController, we first start integrating the Ride Ender with the Bill Manager and the Infraction Manager.
 \begin{figure}[H]
 \includegraphics[scale=0.5]{RideController/RideController1}
 \centering
 \end{figure}
-Subsequently, we integrate the Ride Manager with the Car Data Retriever stub and, finally, with the Ride Ender that we previously tested
+Subsequently, we integrate the Ride Manager with the Car Data Retriever  and, finally, with the Ride Ender that we previously tested
 \begin{figure}[H]
 \includegraphics[scale=0.5]{RideController/RideController2}
 \centering
@@ -149,12 +149,12 @@ This is the final integrated RideController module
 \\
 In testing the BillController, we must integrate the Bill Manager with the Balance Manager
 \begin{figure}[H]
-\includegraphics[scale=0.5]{BillController/BillControllerFinal}
+\includegraphics[scale=0.5]{BillController/BillController2}
 \centering
 \end{figure}
 \textbf{FaultController}
 \\
-The integration sequence of the FaultController is straightforward, since we just need to test the interaction between the Fault Manager and the Assistance List Manager Stub
+The integration sequence of the FaultController is straightforward, since we just need to test the interaction between the Fault Manager and the Assistance List Manager 
 \begin{figure}[H]
 \includegraphics[scale=0.5]{FaultController/FaultController}
 \centering
@@ -173,7 +173,7 @@ The CarApplication will be the last module we will test. To do this, we first in
 \includegraphics[scale=0.5]{CarApplication/CarApplication1}
 \centering
 \end{figure}
-In the second step, we use a stub (the Car App Dispatcher Stub) to test the Communication Manager
+In the second step, we test the Communication Manager integration with the Car App Dispatcher
 \begin{figure}[H]
 \includegraphics[scale=0.5]{CarApplication/CarApplication2}
 \centering
