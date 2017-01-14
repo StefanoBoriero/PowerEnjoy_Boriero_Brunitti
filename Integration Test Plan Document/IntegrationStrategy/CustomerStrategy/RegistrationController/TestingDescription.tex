@@ -1,0 +1,53 @@
+\subsubsection{RegistrationManager, DrivingLicenseValidator}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{isValid(driving-license)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Invalid license & InvalidLicenseException is raised \\
+
+\hline
+Valid license & Returns true \\
+\hline
+\end{tabular}
+
+\subsubsection{RegistrationManager, PaymentInformationValidator}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{isValid(payment-info)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Invalid payment info & InvalidPaymentInfoException is raised \\
+
+\hline
+Valid payment info & Returns true \\
+\hline
+\end{tabular}
+
+\subsubsection{RegistrationManager, DatabaseController}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{register(user-info)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Existing username & AlreadyExistingUsernameException is raised \\
+
+\hline
+New username & Database entry is created \\
+\hline
+\end{tabular}

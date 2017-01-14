@@ -1,0 +1,134 @@
+\subsubsection{InfractionManager, DatabaseController} 
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{update-status(user-id, status)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Non existing user, Any & InvalidUserException is raised \\
+
+\hline
+Existing user, status & Database entry is updated \\
+\hline
+\end{tabular}
+
+\subsubsection{InfractionManager, BalanceManager}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{pay(user-id, amount)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Non existing user, Any & InvalidUserException is raised \\
+
+\hline
+Existing user, Non-positive value & InvalidArgumentException is raised \\
+
+\hline
+Existing user, more than deposited & Database entry is updated and DebtException is raised \\
+
+\hline
+Existing user, Positive value & Database entry is updated and DebtException is raised \\
+\hline
+\end{tabular}
+
+\subsubsection{LoginManager, DatabaseController}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{login(username, password)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Non existing user, Any & InvalidCredentialException is raised \\
+
+\hline
+Existing user, Wrong password & InvalidCredentialException is raised \\
+
+\hline
+Existing user, Correct password & Login is granted \\
+\hline
+\end{tabular}
+
+
+\subsubsection{PersonalInformationEditor, PaymentInformationValidator}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{isValid(payment-info)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+Null parameter & NullParameterException is raised \\
+
+\hline
+Invalid payment info & InvalidPaymentInfoException is raised \\
+
+\hline
+Valid payment information & Returns true \\
+\hline
+\end{tabular}
+
+\subsubsection{PersonalInformationEditor, DrivingLicenseValidator}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{isValid(driving-license)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+Null parameter & NullParameterException is raised \\
+
+\hline
+Invalid driving license & InvalidLicenseException is raised \\
+
+\hline
+Valid driving license & Returns true \\
+\hline
+\end{tabular}
+
+\subsubsection{PersonalInformationEditor, DatabaseController}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{edit-personal-info(user-info, user-id)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+User-info, Non existing user & InvalidUserException is raised \\
+
+\hline
+User-info, Existing user & Database entry is updated \\
+\hline
+\end{tabular}
+\subsubsection{PersonalInformationRetriever, DatabaseController}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{get-personal-info(user-id)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Non existing user & InvalidUserException is raised \\
+
+\hline
+Existing user & Returns user's information from the database \\
+\hline
+\end{tabular}

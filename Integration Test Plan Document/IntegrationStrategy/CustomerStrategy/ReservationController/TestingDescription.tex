@@ -1,0 +1,153 @@
+\subsubsection{UnlockManager, DatabaseController} 
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{isUnlockable(vehicle-id, user-info)}\\
+\hline
+\textbf{Input} & \textbf{Effect}\\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Non existing vehicle, Any & InvalidVehicleException is raised\\
+
+\hline
+Existing vehicle, user too far from the car & TooFarException is raised\\
+
+\hline
+Existing but unlocked vehicle, valid user-info & AlreadyUnlockedException is raised\\
+
+\hline
+Existing and locked vehicle & Returns true\\
+\hline
+\end{tabular}
+\\
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{setUnlocked(vehicle-id)}\\
+\hline
+\textbf{Input} & \textbf{Effect}\\
+
+\hline
+A Null parameter & NullParemeterException is raised \\
+
+\hline
+Non existing vehicle & InvalidVehicleException is raised\\
+
+\hline
+Existing vehicle & Database entry is updated to Unlocked \\
+\hline
+\end{tabular}
+
+\subsubsection{UnlockManager, CarActuatorDriver} 
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{unlock(vehicle-id)}\\
+\hline
+\textbf{Input} & \textbf{Effect}\\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Unlockable vehicle-id & Right function is called\\
+\hline
+\end{tabular}
+
+\subsubsection{UnlockManager, ReservationTimer} 
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{stop-timer(vehicle-id, user)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Valid vehicle-id, valid user & The timer for reservation is stopped \\
+\hline
+\end{tabular}
+
+\subsubsection{ReservationTimer, InfractionManagerDriver} 
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{timeout(vehicle-id, user-id)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Any, Any & Right function is called from InfractionManager \\
+\hline
+\end{tabular}
+
+\subsubsection{CarReservator, DatabaseController} 
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{create-reservation(user-id, vehicle-id)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Non existing user-id, Any & InvalidArgumentException is raised \\
+
+\hline
+Any, Non existing vehicle-id & InvalidArgumentException is raised \\
+
+\hline
+Debtor user, Any & InvalidUserException is raised \\
+
+\hline
+Banned user, Any & InvalidUserException is raised \\
+
+\hline
+Regular user, Reserved vehicle & UnavailableCarException is raised \\
+
+\hline
+Regular user, Needy vehicle & UnavailableCarException is raised \\
+
+\hline
+Regular user, Available vehicle & Database entry is created \\
+\hline
+\end{tabular}
+
+
+\subsubsection{CarReservator, ReservationTimer}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{start-timer(reservation)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+A Null parameter & NullParameterException is raised \\
+
+\hline
+A reservation & Timer for the reservation is started \\
+\hline
+\end{tabular}
+
+\subsubsection{AvailableCarRetriever, DatabaseController} 
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{get-near-vehicles(position, range)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Invalid position, Any & InvalidPositionException is raised \\
+
+\hline
+Valid position, Non-positive integer & InvalidArgmuentException is raised \\
+
+\hline
+Valid position, Positive integer & Returns the list of available cars in the input range from the input poition \\
+\hline
+\end{tabular}

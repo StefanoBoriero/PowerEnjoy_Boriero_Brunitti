@@ -1,0 +1,49 @@
+\subsubsection{ReportFormManager, DatabaseController}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{get-vehicle-id(vehicle-plate)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Non existing plate & InvalidArgumentException is raised \\
+
+\hline
+Existing plate & Returns vehicle-id from the database \\
+\hline
+\end{tabular}
+\\
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{insert-report(vehicle-id, report)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Valid id, Empty report & EmptyReportException is raised \\
+
+\hline
+Valid-id, Non-empty report & Database entry is created \\
+\hline
+\end{tabular}
+
+\subsubsection{ReportFormManager, AssistanceListManager}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{add(vehicle-id)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Valid id & Vehicle is added to the AssistanceList \\
+\hline
+\end{tabular}

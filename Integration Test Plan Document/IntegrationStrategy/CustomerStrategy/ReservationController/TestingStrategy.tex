@@ -1,0 +1,51 @@
+\begin{Large}
+\textbf{Reservation Controller}
+\end{Large}
+
+First we integrate the UnlockManger with the DatabaseController
+\begin{figure}[H]
+\centering
+\includegraphics{ReservationController/Unlock_DB_Integration}
+\end{figure}
+
+Then we integrate the UnlockManager with the CarActuatorDriver
+\begin{figure}[H]
+\centering
+\includegraphics{ReservationController/Unlock_Actuator_Integration}
+\end{figure}
+
+At last we integrate the UnlockManager with the ReservationTimer
+\begin{figure}[H]
+\centering
+\includegraphics{ReservationController/Unlock_Timer_Integration}
+\end{figure}
+
+We proceed integrating the ReservationTimer with the InfractionManagerDriver
+\begin{figure}[H]
+\centering
+\includegraphics{ReservationController/Timer_Integration}
+\end{figure}
+
+Now we integrate the CarReservator with the DatabaseController
+\begin{figure}[H]
+\centering
+\includegraphics{ReservationController/Reservator_DB_Integration}
+\end{figure}
+
+We integrate it also with the Reservation Timer
+\begin{figure}[H]
+\centering
+\includegraphics{ReservationController/Reservator_Timer_Integration}
+\end{figure}
+
+To complete the subsystem integration, we integrate AvailableCarRetriever with DatabaseController
+\begin{figure}[H]
+\centering
+\includegraphics{ReservationController/Available_Integration}
+\end{figure}
+
+This is the final integrated ReservationController module
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1]{ReservationController/ReservationController_Integration}
+\end{figure}

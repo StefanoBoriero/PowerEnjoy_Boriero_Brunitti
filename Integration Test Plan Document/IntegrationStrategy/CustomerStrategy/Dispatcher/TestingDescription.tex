@@ -1,0 +1,206 @@
+\subsubsection{ClientDispatcher, ReservationController}
+
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{reserve(vehicle-id, user)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Any, Non existing user & InvalidArgumentException is raised \\
+\hline
+Non existing vehicle, Existing user & InvalidArgumentException is raised \\
+
+\hline
+Debtor user, Any & InvalidUserException is raised \\
+
+\hline
+Banned user, Any & InvalidUserException is raised \\
+
+\hline
+Regular user, Reserved vehicle  & UnavailableCarException is raised \\
+
+\hline
+Regular user, Needy vehicle & UnavailableCarException is raised \\
+
+\hline
+Regular user, Available vehicle & Database entry is created \\
+\hline
+\end{tabular}
+\\
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{unlock(veicle-id, user)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Non existing vehicle, Any & InvalidVehicleException is raised \\
+
+\hline
+Existing vehicle, user too far from the car & TooFarException is raised \\
+
+\hline
+Existing but unlocked vehicle, valid user-info & AlreadyUnlockedException is raised \\
+
+\hline
+Existing and locked vehicle, valid user-info & Database entry is updated, reservation timer is stopped and car is unlocked \\
+\hline
+\end{tabular}
+\\
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{get-near-vehicles(position)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Invalid position, Any & InvalidPositionException is raised \\
+
+\hline
+Valid position, Non-positive integer & InvalidArgmuentException is raised \\
+
+\hline
+Valid position, Positive integer & Returns the list of available cars in the input range from the input poition \\
+\hline
+\end{tabular}
+\subsubsection{ClientDispatcher, BalanceController}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{deposit(payment-method, amount, user-id} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Any, Any, Non existing user & InvalidUserException is raised \\
+
+\hline
+Invalid info, Any, Existing user & TransactionExeption is raised \\
+
+\hline
+Valid info, Non-positive value, Existing user & InvalidArgumentException is raised \\
+
+\hline
+Valid info, Positive value more than aﬀordable, Existing user & TransactionException is raised \\
+
+\hline
+Valid info, Positive value less than aﬀordable, Existing user & Money is transfered from user payment provider to the company \\
+\hline
+\end{tabular}
+\subsubsection{ClientDispatcher, AccountController}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{login(username, password)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Non existing user, Any & InvalidCredentialException is raised \\
+
+\hline
+Existing user, Wrong password & InvalidCredentialException is raised \\
+
+\hline
+Existing user, Correct password & Login is granted \\
+\hline
+\end{tabular}
+\\
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{get-personal-info(user-id)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Non existing user & InvalidUserException is raised \\
+
+\hline
+Existing user & Returns user’s information from the database \\
+\hline
+\end{tabular}
+\\
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{edit-personal-info(user-info, user-id)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Any, Non existing user & InvalidArgumentException is raised \\
+
+\hline
+Invalid payment info, Existing user & InvalidPaymentInfoException is raised \\
+
+\hline
+Invalid driving license, Existing user & InvalidLicenseException is raised \\
+
+\hline
+Valid info, Existing user & Database entries are updated \\
+\hline
+\end{tabular}
+
+\subsubsection{ClientDispatcher, RegistrationController}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{register(user-info)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Invalid payment info & InvalidPaymentInfoException is raised \\
+
+\hline
+Invalid driving license & InvalidLicenseException is raised \\
+
+\hline
+Existing username & AlreadyExistingUsernameException is raised \\
+
+\hline
+New username, Valid info & Database entry is created \\
+\hline
+\end{tabular}
+\subsubsection{ClientDispatcher, ReportController}
+
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{report(vehicle-plate, report)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Non existing plate, Any & InvalidArgumentException is raised \\
+
+\hline
+Valid plate, Empty report & InvalidArgumentException is raised \\
+
+\hline
+Valid plate, Non-empty report & Database entry is created and vehicle is added to AssistanceList\\
+\hline
+\end{tabular}

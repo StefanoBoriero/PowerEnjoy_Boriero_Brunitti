@@ -1,0 +1,138 @@
+\subsubsection{BalanceManager, DatabaseController}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{pay(user-id, amount)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Non existing user, Any & InvalidUserException is raised \\
+
+\hline
+Existing user, Non-positive value & InvalidArgumentException is raised \\
+
+\hline
+Existing user, More than deposited & Database entry is updated and DebtException is raised \\
+
+\hline
+Existing user, Positive value & Database entry is updated \\
+\hline
+\end{tabular}
+\\
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{deposit(user-id, amount)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Non existing user, Any & InvalidUserException is raised \\
+
+\hline
+Existing user, Non-positve amount & InvalidArgumentException is raised \\
+
+\hline
+Debtor user, More than debt & User balance and status entries are updated and user status is changed \\
+
+\hline
+Regular user, Positive value & User balance entry is updated \\
+\hline
+
+\hline
+\end{tabular}
+
+\subsubsection{BalanceManager, InfractionManager}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{signal-infraction(user-id, infraction-type)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Non existing user, Any & InvalidUserException is raised \\
+
+\hline
+Existing user, Infraction & Infraction is handled by InfractionManager \\
+\hline
+\end{tabular}
+
+\subsubsection{BalanceManager, NotificationForwarder}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{notify(user)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Non existing user & InvalidUserException is raised \\
+
+\hline
+Existing user & A notification is sent to the user \\
+\hline
+\end{tabular}
+
+\subsubsection{TransactionProcessor, PaymentForwarder}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{withdraw(payment-info, amount, user-id)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Any, Any, Non existing user & InvalidUserException is raised \\
+
+\hline
+Invalid info, Any, Existing user & TransactionExeption is raised \\
+
+\hline
+Valid info, Non-positive value, Existing user & InvalidArgumentException is raised\\
+
+\hline
+Valid info, Positive value more than affordable, Existing user & TransactionException is raised\\
+
+\hline
+Valid info, Positive value less than affordable, Existing user & Money is transfered from user payment provider to the company\\
+\hline
+\end{tabular}
+
+\subsubsection{TransactionProcessor, BalanceManager}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\multicolumn{2}{|c|}{deposit(user-id, amount)} \\
+\hline
+\textbf{Input} & \textbf{Effect} \\
+
+\hline
+A Null parameter & NullParameterException is raised \\
+
+\hline
+Non existing user, Any & InvalidUserException is raised \\
+
+\hline
+Existing user, Non-positve amount & InvalidArgumentException is raised \\
+
+\hline
+Debtor user, More than debt & User balance and status entries are updated and user status is changed \\
+
+\hline
+Regular user, Positive value & User balance entry is updated \\
+\hline
+
+\hline
+
+\end{tabular}

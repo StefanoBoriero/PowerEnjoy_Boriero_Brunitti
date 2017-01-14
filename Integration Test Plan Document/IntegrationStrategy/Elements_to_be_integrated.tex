@@ -1,0 +1,36 @@
+As it can be seen from the Design Document, the whole system can be divided into three major subsystem:
+\begin{itemize}
+\item \textbf{Customer subsystem}, offering functionalities to exploit the services provided by the car sharing company
+
+\item \textbf{Employee subsystem}, offering functionalities for company's employee to manage the system
+
+\item \textbf{Car subsystem}, offering functionalities to dialog with cars
+\end{itemize}
+
+Each of this subsystems is divided into submodules encapsulating the components related to a group of functionalities in this way:
+\begin{itemize}
+\item \textbf{Customer subsystem}:
+\begin{itemize}
+\item \textit{ReservationController}: offers the user functionalities to manage a reservation
+\item \textit{BalanceController}: offers the user functionalities to manage his balance
+\item \textit{AccountController}: offers the user functionalities to manage his account
+\item \textit{RegistrationController}: offers the user functionalities to register to the system
+\item \textit{ReportController}: offers the user functionalities to notify issues
+\end{itemize}
+\item \textbf{Employee subsystem}:
+\begin{itemize}
+\item \textit{SafeAreaController}: offers the employee functionalities to manage safe areas
+\item \textit{AssistanceController}: offers the employee functionalities to manage needy cars
+\end{itemize}
+\item \textbf{Car subsystem}:
+\begin{itemize}
+\item \textit{CarController}: offers the system functionalities to send commands to the car
+\item \textit{RideController}: offers the CarApp the functionalities to manage a ride
+\item \textit{BillController}: offers functionalities to calculate bills
+\item \textit{FaultController}: offers the CarApp the functionalities to manage faults
+\item \textit{FleetController}: offer the CarApp the functionalities to join and detach from the fleet
+\end{itemize}
+\end{itemize}
+
+
+The elements to be integrated are the components of these submodules
