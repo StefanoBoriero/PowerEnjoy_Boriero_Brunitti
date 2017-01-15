@@ -1,0 +1,707 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.10)  15 JAN 2017 14:54
+entering extended mode
+**./design.tex
+(design.tex
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\adjustbox.sty"
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks15
+\XKV@tempa@toks=\toks16
+)
+\XKV@depth=\count88
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\adjcalc.sty"
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\trimclip.sty"
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\collectbox\collectbox.sty"
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box26
+)
+\tc@llx=\dimen105
+\tc@lly=\dimen106
+\tc@urx=\dimen107
+\tc@ury=\dimen108
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\tc-pdftex.def"
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen109
+\adjbox@Height=\dimen110
+\adjbox@Depth=\dimen111
+\adjbox@Totalheight=\dimen112
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty"
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count89
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\varwidth.sty"
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box27
+\sift@deathcycles=\count90
+\@vwid@loff=\dimen113
+\@vwid@roff=\dimen114
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty"
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty"
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count91
+\c@Blindtext=\count92
+\c@blind@countparstart=\count93
+\blind@countxx=\count94
+\blindtext@numBlindtext=\count95
+\blind@countyy=\count96
+\c@blindlist=\count97
+\c@blindlistlevel=\count98
+\c@blindlist@level=\count99
+\blind@listitem=\count100
+\c@blind@listcount=\count101
+\c@blind@levelcount=\count102
+\blind@mathformula=\count103
+\blind@Mathformula=\count104
+\c@blind@randomcount=\count105
+\c@blind@randommax=\count106
+\c@blind@pangramcount=\count107
+\c@blind@pangrammax=\count108
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty"
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip43
+\enit@outerparindent=\dimen115
+\enit@toks=\toks17
+\enit@inbox=\box28
+\enitdp@description=\count109
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count110
+\float@exts=\toks18
+\float@box=\box29
+\@float@everytoks=\toks19
+\@floatcapt=\box30
+) (design.aux
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+)
+\openout1 = `design.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count111
+\scratchdimen=\dimen116
+\scratchbox=\box31
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen117
+\MPnumerator=\count115
+\makeMPintoPDFobject=\count116
+\everyMPtoPDFconversion=\toks21
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 18.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 18.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 18.
+
+<DesignDocument/Logo_Politecnico_Milano.png, id=1, 666.49pt x 489.83pt>
+File: DesignDocument/Logo_Politecnico_Milano.png Graphic file (type png)
+
+<use DesignDocument/Logo_Politecnico_Milano.png>
+Package pdftex.def Info: DesignDocument/Logo_Politecnico_Milano.png used on inp
+ut line 19.
+(pdftex.def)             Requested size: 333.24419pt x 244.9144pt.
+
+Overfull \hbox (3.24419pt too wide) in paragraph at lines 19--20
+[][] 
+ []
+
+[1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./DesignDocument/Logo_Pol
+itecnico_Milano.png>] (design.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+)
+\tf@toc=\write3
+\openout3 = `design.toc'.
+
+ [2]
+Overfull \hbox (13.72185pt too wide) in paragraph at lines 56--59
+\OT1/cmr/m/n/10 -Our Pow-erEn-Joy RASD https://github.com/StefanoBoriero/PowerE
+njoy-Boriero-
+ []
+
+[3]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 61.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 61.
+ [4]
+<"DesignDocument/HighLevel".jpg, id=23, 561.59813pt x 380.92313pt>
+File: "DesignDocument/HighLevel".jpg Graphic file (type jpg)
+
+<use "DesignDocument/HighLevel".jpg>
+Package pdftex.def Info: "DesignDocument/HighLevel".jpg used on input line 71.
+(pdftex.def)             Requested size: 361.34999pt x 245.09775pt.
+ [5 <./DesignDocument/HighLevel.jpg>]
+<"DesignDocument/MiddleLevelComponentView".jpg, id=27, 962.09438pt x 683.55376p
+t>
+File: "DesignDocument/MiddleLevelComponentView".jpg Graphic file (type jpg)
+ <use "DesignDocument/MiddleLevelComponentView".jpg>
+Package pdftex.def Info: "DesignDocument/MiddleLevelComponentView".jpg used on 
+input line 86.
+(pdftex.def)             Requested size: 411.93877pt x 292.6812pt.
+ [6 <./DesignDocument/MiddleLevelComponentView.jpg>]
+<DesignDocument/Components/Images/ComponentView.jpg, id=31, 1918.91907pt x 1202
+.99437pt>
+File: DesignDocument/Components/Images/ComponentView.jpg Graphic file (type jpg
+)
+ <use DesignDocument/Components/Images/ComponentView.jpg>
+Package pdftex.def Info: DesignDocument/Components/Images/ComponentView.jpg use
+d on input line 94.
+(pdftex.def)             Requested size: 426.39255pt x 267.30287pt.
+ [7 <./DesignDocument/Components/Images/ComponentView.jpg>]
+<"DesignDocument/Deployment/DeploymentView".jpg, id=36, 769.37437pt x 536.0025p
+t>
+File: "DesignDocument/Deployment/DeploymentView".jpg Graphic file (type jpg)
+ <use "DesignDocument/Deployment/DeploymentView".jpg>
+Package pdftex.def Info: "DesignDocument/Deployment/DeploymentView".jpg used on
+ input line 106.
+(pdftex.def)             Requested size: 397.48499pt x 276.92358pt.
+ [8 <./DesignDocument/Deployment/DeploymentView.jpg>]
+<"DesignDocument/SequenceDiagrams/login sequence diagram alternative version".j
+pg, id=40, 655.248pt x 525.162pt>
+File: "DesignDocument/SequenceDiagrams/login sequence diagram alternative versi
+on".jpg Graphic file (type jpg)
+
+<use "DesignDocument/SequenceDiagrams/login sequence diagram alternative versio
+n".jpg>
+Package pdftex.def Info: "DesignDocument/SequenceDiagrams/login sequence diagra
+m alternative version".jpg used on input line 118.
+(pdftex.def)             Requested size: 411.93877pt x 330.16467pt.
+ [9 <./DesignDocument/SequenceDiagrams/login sequence diagram alternative versi
+on.jpg>] [10]
+<"DesignDocument/SequenceDiagrams/Client_reservation_sequence".jpg, id=47, 800.
+39024pt x 525.162pt>
+File: "DesignDocument/SequenceDiagrams/Client_reservation_sequence".jpg Graphic
+ file (type jpg)
+
+<use "DesignDocument/SequenceDiagrams/Client_reservation_sequence".jpg>
+Package pdftex.def Info: "DesignDocument/SequenceDiagrams/Client_reservation_se
+quence".jpg used on input line 127.
+(pdftex.def)             Requested size: 397.48499pt x 260.80139pt.
+
+[11 <./DesignDocument/SequenceDiagrams/Client_reservation_sequence.jpg>]
+<"DesignDocument/SequenceDiagrams/Unlock_car_sequence_diagram".jpg, id=51, 976.
+8495pt x 531.78674pt>
+File: "DesignDocument/SequenceDiagrams/Unlock_car_sequence_diagram".jpg Graphic
+ file (type jpg)
+
+<use "DesignDocument/SequenceDiagrams/Unlock_car_sequence_diagram".jpg>
+Package pdftex.def Info: "DesignDocument/SequenceDiagrams/Unlock_car_sequence_d
+iagram".jpg used on input line 137.
+(pdftex.def)             Requested size: 397.48499pt x 216.38675pt.
+Missing character: There is no Â in font cmr10!
+Missing character: There is no « in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no » in font cmr10!
+
+[12 <./DesignDocument/SequenceDiagrams/Unlock_car_sequence_diagram.jpg>]
+<"DesignDocument/SequenceDiagrams/endRideSequence".jpg, id=55, 846.16125pt x 75
+9.58781pt>
+File: "DesignDocument/SequenceDiagrams/endRideSequence".jpg Graphic file (type 
+jpg)
+ <use "DesignDocument/SequenceDiagrams/endRideSequence".jpg>
+Package pdftex.def Info: "DesignDocument/SequenceDiagrams/endRideSequence".jpg 
+used on input line 148.
+(pdftex.def)             Requested size: 397.48499pt x 356.80928pt.
+ [13 <./DesignDocument/SequenceDiagrams/endRideSequence.jpg>]
+<"DesignDocument/StateDiagrams/UserStateDiagram".jpg, id=60, 496.254pt x 383.63
+326pt>
+File: "DesignDocument/StateDiagrams/UserStateDiagram".jpg Graphic file (type jp
+g)
+ <use "DesignDocument/StateDiagrams/UserStateDiagram".jpg>
+Package pdftex.def Info: "DesignDocument/StateDiagrams/UserStateDiagram".jpg us
+ed on input line 160.
+(pdftex.def)             Requested size: 397.48499pt x 307.2758pt.
+ [14 <./DesignDocument/StateDiagrams/UserStateDiagram.jpg>]
+<"DesignDocument/Components/Images/RegistrationController".jpg, id=64, 217.5628
+pt x 178.41656pt>
+File: "DesignDocument/Components/Images/RegistrationController".jpg Graphic fil
+e (type jpg)
+
+<use "DesignDocument/Components/Images/RegistrationController".jpg>
+Package pdftex.def Info: "DesignDocument/Components/Images/RegistrationControll
+er".jpg used on input line 172.
+(pdftex.def)             Requested size: 289.07999pt x 237.09773pt.
+ [15 <./DesignDocument/Components/Images/RegistrationController.jpg>]
+<"DesignDocument/Components/Images/AccountController".jpg, id=68, 210.03468pt x
+ 204.01219pt>
+File: "DesignDocument/Components/Images/AccountController".jpg Graphic file (ty
+pe jpg)
+ <use "DesignDocument/Components/Images/AccountController".jpg>
+Package pdftex.def Info: "DesignDocument/Components/Images/AccountController".j
+pg used on input line 190.
+(pdftex.def)             Requested size: 289.07999pt x 280.79312pt.
+
+[16 <./DesignDocument/Components/Images/AccountController.jpg>]
+<"DesignDocument/Components/Images/ReservationController".jpg, id=72, 213.04594
+pt x 211.54031pt>
+File: "DesignDocument/Components/Images/ReservationController".jpg Graphic file
+ (type jpg)
+
+<use "DesignDocument/Components/Images/ReservationController".jpg>
+Package pdftex.def Info: "DesignDocument/Components/Images/ReservationControlle
+r".jpg used on input line 211.
+(pdftex.def)             Requested size: 289.07999pt x 287.05511pt.
+ [17 <./DesignDocument/Components/Images/ReservationController.jpg>]
+<"DesignDocument/Components/Images/BalanceController".jpg, id=76, 231.86626pt x
+ 129.48375pt>
+File: "DesignDocument/Components/Images/BalanceController".jpg Graphic file (ty
+pe jpg)
+ <use "DesignDocument/Components/Images/BalanceController".jpg>
+Package pdftex.def Info: "DesignDocument/Components/Images/BalanceController".j
+pg used on input line 233.
+(pdftex.def)             Requested size: 289.07999pt x 161.44923pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--252
+
+ []
+
+[18 <./DesignDocument/Components/Images/BalanceController.jpg>]
+<"DesignDocument/Components/Images/ReportController".jpg, id=80, 205.5178pt x 9
+3.34875pt>
+File: "DesignDocument/Components/Images/ReportController".jpg Graphic file (typ
+e jpg)
+ <use "DesignDocument/Components/Images/ReportController".jpg>
+Package pdftex.def Info: "DesignDocument/Components/Images/ReportController".jp
+g used on input line 258.
+(pdftex.def)             Requested size: 289.07999pt x 131.31407pt.
+
+[19 <./DesignDocument/Components/Images/ReportController.jpg>]
+<"DesignDocument/Components/Images/SafeAreaController".jpg, id=85, 213.04594pt 
+x 152.06813pt>
+File: "DesignDocument/Components/Images/SafeAreaController".jpg Graphic file (t
+ype jpg)
+ <use "DesignDocument/Components/Images/SafeAreaController".jpg>
+Package pdftex.def Info: "DesignDocument/Components/Images/SafeAreaController".
+jpg used on input line 274.
+(pdftex.def)             Requested size: 289.07999pt x 206.35278pt.
+
+[20 <./DesignDocument/Components/Images/SafeAreaController.jpg>]
+<"DesignDocument/Components/Images/AssistanceController".jpg, id=89, 145.29282p
+t x 152.06813pt>
+File: "DesignDocument/Components/Images/AssistanceController".jpg Graphic file 
+(type jpg)
+
+<use "DesignDocument/Components/Images/AssistanceController".jpg>
+Package pdftex.def Info: "DesignDocument/Components/Images/AssistanceController
+".jpg used on input line 294.
+(pdftex.def)             Requested size: 216.81pt x 226.93678pt.
+ [21 <./DesignDocument/Components/Images/AssistanceController.jpg>]
+<"DesignDocument/Components/Images/CarController".jpg, id=93, 203.25937pt x 152
+.06813pt>
+File: "DesignDocument/Components/Images/CarController".jpg Graphic file (type j
+pg)
+ <use "DesignDocument/Components/Images/CarController".jpg>
+Package pdftex.def Info: "DesignDocument/Components/Images/CarController".jpg u
+sed on input line 316.
+(pdftex.def)             Requested size: 289.07999pt x 216.28397pt.
+ [22 <./DesignDocument/Components/Images/CarController.jpg>]
+<"DesignDocument/Components/Images/RideController".jpg, id=97, 210.7875pt x 152
+.06813pt>
+File: "DesignDocument/Components/Images/RideController".jpg Graphic file (type 
+jpg)
+ <use "DesignDocument/Components/Images/RideController".jpg>
+Package pdftex.def Info: "DesignDocument/Components/Images/RideController".jpg 
+used on input line 339.
+(pdftex.def)             Requested size: 289.07999pt x 208.55482pt.
+ [23 <./DesignDocument/Components/Images/RideController.jpg>]
+<"DesignDocument/Components/Images/BillController".jpg, id=101, 145.29282pt x 1
+52.06813pt>
+File: "DesignDocument/Components/Images/BillController".jpg Graphic file (type 
+jpg)
+ <use "DesignDocument/Components/Images/BillController".jpg>
+Package pdftex.def Info: "DesignDocument/Components/Images/BillController".jpg 
+used on input line 359.
+(pdftex.def)             Requested size: 216.81pt x 226.93678pt.
+
+[24 <./DesignDocument/Components/Images/BillController.jpg>]
+<"DesignDocument/Components/Images/FaultController".jpg, id=105, 176.91093pt x 
+152.06813pt>
+File: "DesignDocument/Components/Images/FaultController".jpg Graphic file (type
+ jpg)
+ <use "DesignDocument/Components/Images/FaultController".jpg>
+Package pdftex.def Info: "DesignDocument/Components/Images/FaultController".jpg
+ used on input line 377.
+(pdftex.def)             Requested size: 289.07999pt x 248.4907pt.
+
+[25 <./DesignDocument/Components/Images/FaultController.jpg>]
+<"DesignDocument/Components/Images/FleetController".jpg, id=110, 203.25937pt x 
+152.06813pt>
+File: "DesignDocument/Components/Images/FleetController".jpg Graphic file (type
+ jpg)
+ <use "DesignDocument/Components/Images/FleetController".jpg>
+Package pdftex.def Info: "DesignDocument/Components/Images/FleetController".jpg
+ used on input line 393.
+(pdftex.def)             Requested size: 289.07999pt x 216.28397pt.
+
+[26 <./DesignDocument/Components/Images/FleetController.jpg>]
+<"DesignDocument/Components/Images/CarApplication".jpg, id=114, 526.96875pt x 9
+7.86563pt>
+File: "DesignDocument/Components/Images/CarApplication".jpg Graphic file (type 
+jpg)
+ <use "DesignDocument/Components/Images/CarApplication".jpg>
+Package pdftex.def Info: "DesignDocument/Components/Images/CarApplication".jpg 
+used on input line 413.
+(pdftex.def)             Requested size: 289.07999pt x 53.68886pt.
+ [27 <./DesignDocument/Components/Images/CarApplication.jpg>]
+<"DesignDocument/Components/Images/PaymentGateway".jpg, id=118, 134.00063pt x 9
+8.61844pt>
+File: "DesignDocument/Components/Images/PaymentGateway".jpg Graphic file (type 
+jpg)
+ <use "DesignDocument/Components/Images/PaymentGateway".jpg>
+Package pdftex.def Info: "DesignDocument/Components/Images/PaymentGateway".jpg 
+used on input line 431.
+(pdftex.def)             Requested size: 216.81pt x 159.56233pt.
+ [28 <./DesignDocument/Components/Images/PaymentGateway.jpg>]
+<"DesignDocument/Components/Images/NotificationGateway".jpg, id=122, 132.495pt 
+x 98.61844pt>
+File: "DesignDocument/Components/Images/NotificationGateway".jpg Graphic file (
+type jpg)
+ <use "DesignDocument/Components/Images/NotificationGateway".jpg>
+Package pdftex.def Info: "DesignDocument/Components/Images/NotificationGateway"
+.jpg used on input line 447.
+(pdftex.def)             Requested size: 216.81pt x 161.38765pt.
+
+[29 <./DesignDocument/Components/Images/NotificationGateway.jpg>]
+<"DesignDocument/Components/Images/ClientDispatcher".jpg, id=126, 129.48375pt x
+ 97.86563pt>
+File: "DesignDocument/Components/Images/ClientDispatcher".jpg Graphic file (typ
+e jpg)
+ <use "DesignDocument/Components/Images/ClientDispatcher".jpg>
+Package pdftex.def Info: "DesignDocument/Components/Images/ClientDispatcher".jp
+g used on input line 463.
+(pdftex.def)             Requested size: 216.81pt x 163.88596pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 458--477
+
+ []
+
+[30 <./DesignDocument/Components/Images/ClientDispatcher.jpg>]
+<"DesignDocument/Components/Images/EmployeeDispatcher".jpg, id=130, 112.16907pt
+ x 95.6072pt>
+File: "DesignDocument/Components/Images/EmployeeDispatcher".jpg Graphic file (t
+ype jpg)
+ <use "DesignDocument/Components/Images/EmployeeDispatcher".jpg>
+Package pdftex.def Info: "DesignDocument/Components/Images/EmployeeDispatcher".
+jpg used on input line 484.
+(pdftex.def)             Requested size: 216.81pt x 184.81831pt.
+
+[31 <./DesignDocument/Components/Images/EmployeeDispatcher.jpg>]
+<"DesignDocument/Components/Images/CarAppDispatcher".jpg, id=135, 112.16907pt x
+ 95.6072pt>
+File: "DesignDocument/Components/Images/CarAppDispatcher".jpg Graphic file (typ
+e jpg)
+ <use "DesignDocument/Components/Images/CarAppDispatcher".jpg>
+Package pdftex.def Info: "DesignDocument/Components/Images/CarAppDispatcher".jp
+g used on input line 501.
+(pdftex.def)             Requested size: 216.81pt x 184.81831pt.
+
+[32 <./DesignDocument/Components/Images/CarAppDispatcher.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 517--520
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 521--524
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--528
+
+ []
+
+[33] [34]
+<"DesignDocument/Algorithms/pricing algorithm".jpg, id=145, 526.96875pt x 586.5
+915pt>
+File: "DesignDocument/Algorithms/pricing algorithm".jpg Graphic file (type jpg)
+
+ <use "DesignDocument/Algorithms/pricing algorithm".jpg>
+Package pdftex.def Info: "DesignDocument/Algorithms/pricing algorithm".jpg used
+ on input line 534.
+(pdftex.def)             Requested size: 361.34999pt x 402.25134pt.
+ [35 <./DesignDocument/Algorithms/pricing algorithm.jpg>]
+<"DesignDocument/UXDiagrams/UXClient".jpg, id=149, 1230.39674pt x 562.5015pt>
+File: "DesignDocument/UXDiagrams/UXClient".jpg Graphic file (type jpg)
+
+<use "DesignDocument/UXDiagrams/UXClient".jpg>
+Package pdftex.def Info: "DesignDocument/UXDiagrams/UXClient".jpg used on input
+ line 544.
+(pdftex.def)             Requested size: 397.48499pt x 181.72076pt.
+ [36 <./DesignDocument/UXDiagrams/UXClient.jpg>]
+<"DesignDocument/UXDiagrams/EmployeeUX".jpg, id=153, 638.385pt x 401.70074pt>
+File: "DesignDocument/UXDiagrams/EmployeeUX".jpg Graphic file (type jpg)
+
+<use "DesignDocument/UXDiagrams/EmployeeUX".jpg>
+Package pdftex.def Info: "DesignDocument/UXDiagrams/EmployeeUX".jpg used on inp
+ut line 552.
+(pdftex.def)             Requested size: 397.48499pt x 250.11841pt.
+ [37 <./DesignDocument/UXDiagrams/EmployeeUX.jpg>]
+<"DesignDocument/mockups/employee/Check needy cars".png, id=158, 570.13pt x 377
+.41pt>
+File: "DesignDocument/mockups/employee/Check needy cars".png Graphic file (type
+ png)
+ <use "DesignDocument/mockups/employee/Check needy cars".png>
+Package pdftex.def Info: "DesignDocument/mockups/employee/Check needy cars".png
+ used on input line 562.
+(pdftex.def)             Requested size: 252.94499pt x 167.44302pt.
+
+<"DesignDocument/mockups/employee/Define new safe area".png, id=159, 585.18625p
+t x 377.41pt>
+File: "DesignDocument/mockups/employee/Define new safe area".png Graphic file (
+type png)
+ <use "DesignDocument/mockups/employee/Define new safe area".png>
+Package pdftex.def Info: "DesignDocument/mockups/employee/Define new safe area"
+.png used on input line 570.
+(pdftex.def)             Requested size: 252.94499pt x 163.13544pt.
+
+[38 <./DesignDocument/mockups/employee/Check needy cars.png> <./DesignDocument/
+mockups/employee/Define new safe area.png>]
+<"DesignDocument/mockups/customer/Login".png, id=165, 493.845pt x 326.21875pt>
+File: "DesignDocument/mockups/customer/Login".png Graphic file (type png)
+
+<use "DesignDocument/mockups/customer/Login".png>
+Package pdftex.def Info: "DesignDocument/mockups/customer/Login".png used on in
+put line 580.
+(pdftex.def)             Requested size: 252.94499pt x 167.08614pt.
+
+<"DesignDocument/mockups/customer/CustomerHome".png, id=166, 475.7775pt x 309.1
+55pt>
+File: "DesignDocument/mockups/customer/CustomerHome".png Graphic file (type png
+)
+ <use "DesignDocument/mockups/customer/CustomerHome".png>
+Package pdftex.def Info: "DesignDocument/mockups/customer/CustomerHome".png use
+d on input line 588.
+(pdftex.def)             Requested size: 252.94499pt x 164.36082pt.
+ [39 <./DesignDocument/mockups/customer/Login.png> <./DesignDocument/mockups/cu
+stomer/CustomerHome.png>]
+<"DesignDocument/mockups/customer/Search options".png, id=172, 683.55376pt x 44
+0.64626pt>
+File: "DesignDocument/mockups/customer/Search options".png Graphic file (type p
+ng)
+ <use "DesignDocument/mockups/customer/Search options".png>
+Package pdftex.def Info: "DesignDocument/mockups/customer/Search options".png u
+sed on input line 596.
+(pdftex.def)             Requested size: 252.94499pt x 163.05673pt.
+
+<"DesignDocument/mockups/customer/CarReservation".png, id=173, 492.84125pt x 32
+3.2075pt>
+File: "DesignDocument/mockups/customer/CarReservation".png Graphic file (type p
+ng)
+ <use "DesignDocument/mockups/customer/CarReservation".png>
+Package pdftex.def Info: "DesignDocument/mockups/customer/CarReservation".png u
+sed on input line 604.
+(pdftex.def)             Requested size: 252.94499pt x 165.8841pt.
+ [40 <./DesignDocument/mockups/customer/Search options.png> <./DesignDocument/m
+ockups/customer/CarReservation.png>]
+<"DesignDocument/mockups/customer/Deposit Money".png, id=179, 524.96124pt x 355
+.3275pt>
+File: "DesignDocument/mockups/customer/Deposit Money".png Graphic file (type pn
+g)
+ <use "DesignDocument/mockups/customer/Deposit Money".png>
+Package pdftex.def Info: "DesignDocument/mockups/customer/Deposit Money".png us
+ed on input line 612.
+(pdftex.def)             Requested size: 252.94499pt x 171.21129pt.
+
+<"DesignDocument/mockups/customer/Report a damage".png, id=180, 538.01pt x 317.
+185pt>
+File: "DesignDocument/mockups/customer/Report a damage".png Graphic file (type 
+png)
+ <use "DesignDocument/mockups/customer/Report a damage".png>
+Package pdftex.def Info: "DesignDocument/mockups/customer/Report a damage".png 
+used on input line 621.
+(pdftex.def)             Requested size: 252.94499pt x 149.12535pt.
+ [41 <./DesignDocument/mockups/customer/Deposit Money.png> <./DesignDocument/mo
+ckups/customer/Report a damage.png>]
+<"DesignDocument/mockups/customer/Unlock".png, id=186, 207.77625pt x 402.50375p
+t>
+File: "DesignDocument/mockups/customer/Unlock".png Graphic file (type png)
+ <use "DesignDocument/mockups/customer/Unlock".png>
+Package pdftex.def Info: "DesignDocument/mockups/customer/Unlock".png used on i
+nput line 630.
+(pdftex.def)             Requested size: 72.26999pt x 140.00015pt.
+
+Underfull \hbox (badness 1107) in paragraph at lines 631--631
+\OT1/cmr/m/n/10 map shows the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 631--631
+\OT1/cmr/m/n/10 cus-tomer and
+ []
+
+[42 <./DesignDocument/mockups/customer/Unlock.png>] [43]
+Underfull \hbox (badness 10000) in paragraph at lines 677--700
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 677--700
+
+ []
+
+[44] (design.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2973 strings out of 493333
+ 51875 string characters out of 3139190
+ 107551 words of memory out of 3000000
+ 6407 multiletter control sequences out of 15000+200000
+ 8509 words of font info for 30 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 40i,9n,37p,879b,324s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on design.pdf (44 pages, 1651003 bytes).
+PDF statistics:
+ 219 PDF objects out of 1000 (max. 8388607)
+ 117 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
+
