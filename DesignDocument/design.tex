@@ -2,20 +2,24 @@
 \usepackage{graphicx}
 \usepackage{adjustbox}
 \usepackage{blindtext}
+\usepackage{enumitem}
 \usepackage{float}
 \pdfminorversion=5 
 \pdfcompresslevel=9
 \pdfobjcompresslevel=3
 \begin{document}
-
-\title{Design Document}
-\author{Boriero Stefano  876106  
-Brunitti Simone   875039 }
+\title{\textbf{{\Huge PowerEnJoy project: Design Document}}}
+\author{\begin{large}
+Boriero Stefano  876106  
+Brunitti Simone   875039
+\end{large} }
 
 
 \maketitle
-
+\includegraphics[scale=0.5]{DesignDocument/Logo_Politecnico_Milano.png} 
+\newpage
 \tableofcontents
+\newpage
 
 \section{Introduction}
 \subsection{Purpose}
@@ -52,6 +56,11 @@ JPA & Java Persistence API \\ \hline
 -http://www.w3schools.com/graphics/google-maps-intro.asp For references on Google Maps API  \\
 -MyTaxiService Design Document Sample \\
 -Our PowerEnJoy RASD https://github.com/StefanoBoriero/PowerEnjoy-Boriero-Brunitti/blob/master/releases/RASD-v1.md
+\subsection{Changelog}
+\begin{itemize}[noitemsep]
+\item V 1.0: Release Version.
+\item V 1.1: Added front page, updated fig. 3,
+\end{itemize}
 \newpage
 \section{Architectural design}
 \subsection{Overview}
@@ -282,7 +291,7 @@ When engine stops, the on-board car application sends a notification to the serv
   \begin{adjustbox}{addcode={\begin{minipage}{\width}}{\caption{%
       Assistance Controller
       }\end{minipage}},rotate=0,center}
-      \includegraphics[width=4in]{"DesignDocument/Components/Images/AssistanceController".jpg}%
+      \includegraphics[width=3in]{"DesignDocument/Components/Images/AssistanceController".jpg}%
   \end{adjustbox}
 \end{figure}\\
 \textbf{INTERFACE}: 
@@ -347,7 +356,7 @@ When engine stops, the on-board car application sends a notification to the serv
   \begin{adjustbox}{addcode={\begin{minipage}{\width}}{\caption{%
       Bill Controller
       }\end{minipage}},rotate=0,center}
-      \includegraphics[width=4in]{"DesignDocument/Components/Images/BillController".jpg}%
+      \includegraphics[width=3in]{"DesignDocument/Components/Images/BillController".jpg}%
   \end{adjustbox}
 \end{figure}\\
 \textbf{INTERFACE}: 
