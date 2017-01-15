@@ -826,21 +826,23 @@ Here is a list of drivers we will use: \\\\
   \hline
   Transaction Processor Driver & Balance Manager and Payment Forwarder\\
   \hline
-  Infraction Manager Driver & Balance Manager and Database Controller\\
-  \hline
 \end{tabular}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
  \hline
+ Infraction Manager Driver & Balance Manager and Database Controller\\
+  \hline
   Login Manager Driver & Database Controller\\
   \hline
-  Personal Information Editor Driver & Payment Information Validator, Database Controller and Driving License Validator\\
+  Personal Information Editor Driver & Payment Information Validator, Driving License Validator and Database Controller\\
   \hline
   Personal Information Retriever Driver & Database Controller\\
   \hline
-   Registration Manager Driver & Driving License Validator, Payment Information Validator and Database Controller\\
+  Registration Manager Driver & Payment Information Validator and Database Controller\\
   \hline
-   Report Form Manager Driver & Database Controller and Assistance List Manager\\
-   \hline
+  Report Form Manager Driver & Database Controller and Assistance List Manager\\
+  \hline
+  Client Dispatcher Driver & Reservation Controller, Balance Controller, Account Controller, Registration Controller and Report Controller\\
+  \hline
 \end{tabular}
 \newpage
 \subsection{Test Data}
@@ -872,11 +874,8 @@ The following list contains different sets of test data we want to try in order 
 All other sets of test data have already been discussed in chapter 3.
 \newpage
 \section{Effort Spent}
-Simone Brunitti: \\
-21/12/2016: 4 h
-
-Stefano Boriero: \\
-21/12/2016: -1 h
+Stefano Boriero: 20 hours\\
+Simone Brunitti : 20 hours
 
 
 \end{document} 
