@@ -49,9 +49,9 @@ Brunitti Simone   875039
 
 \subsubsection{Software Integration Sequence}
 
-\begin{Large}
-\textbf{Employee System Strategy}
-\end{Large}
+\begin{large}
+\textbf{Employee Subsystem Strategy}
+\end{large}
 
 For testing the Employee System, we will use a bottom-up strategy. These are the separate modules we are going to test: 
 \begin{enumerate}
@@ -104,9 +104,9 @@ Finally, we are able to test all the system together by integrating the Employee
 \end{figure}
 \newpage
 
-\begin{Large}
-\textbf{Car System Strategy}
-\end{Large}
+\begin{large}
+\textbf{Car Subsystem Strategy}
+\end{large}
 
 In this paragraph we are going to test the System that we will develop for managing the cars. As usual, we are going to follow a bottom-up approach by splitting our system in various subsystem, in order to make testing easier. These are the subsystems we want to test:
 
@@ -199,8 +199,10 @@ The final step of the Car System integration is to integrate all the modules in 
 \centering
 \end{figure}
 
+\newpage
 \input{IntegrationStrategy/CustomerStrategy/CustomerStrategy.tex}
 
+\newpage
 \subsubsection{Subsystem Integration Sequence}
 \input{IntegrationStrategy/Subsystem_integration_strategy.tex}
 
@@ -414,6 +416,7 @@ The final step of the Car System integration is to integrate all the modules in 
   Valid request & Forwards employee's request to the dedicated component\\
   \hline
 \end{tabular}
+\newpage
 \subsection{Car Subsystem}
 \subsubsection{I10 Car Data Retriever - Database Controller}
 \begin{tabular}{ |p{5cm}|p{7cm}| }
@@ -713,6 +716,7 @@ The final step of the Car System integration is to integrate all the modules in 
   \hline
 \end{tabular}
 
+\newpage
 \subsection{Customer Subsystem}
 \input{IntegrationStrategy/CustomerStrategy/ReservationController/TestingDescription.tex}
 \input{IntegrationStrategy/CustomerStrategy/BalanceController/TestingDescription.tex}
