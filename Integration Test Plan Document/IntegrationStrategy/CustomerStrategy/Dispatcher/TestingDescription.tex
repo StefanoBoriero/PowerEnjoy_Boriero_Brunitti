@@ -1,4 +1,4 @@
-\subsubsection{ClientDispatcher, ReservationController}
+\subsubsection{I53 ClientDispatcher - ReservationController}
 
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
@@ -73,7 +73,7 @@ Valid position, Non-positive integer & InvalidArgmuentException is raised \\
 Valid position, Positive integer & Returns the list of available cars in the input range from the input poition \\
 \hline
 \end{tabular}
-\subsubsection{ClientDispatcher, BalanceController}
+\subsubsection{I54 ClientDispatcher - BalanceController}
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
 \multicolumn{2}{|c|}{deposit(payment-method, amount, user-id} \\
@@ -99,7 +99,7 @@ Valid info, Positive value more than aﬀordable, Existing user & TransactionExc
 Valid info, Positive value less than aﬀordable, Existing user & Money is transfered from user payment provider to the company \\
 \hline
 \end{tabular}
-\subsubsection{ClientDispatcher, AccountController}
+\subsubsection{I55 ClientDispatcher - AccountController}
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
 \multicolumn{2}{|c|}{login(username, password)} \\
@@ -160,7 +160,7 @@ Valid info, Existing user & Database entries are updated \\
 \hline
 \end{tabular}
 
-\subsubsection{ClientDispatcher, RegistrationController}
+\subsubsection{I56 ClientDispatcher - RegistrationController}
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
 \multicolumn{2}{|c|}{register(user-info)} \\
@@ -183,7 +183,7 @@ Existing username & AlreadyExistingUsernameException is raised \\
 New username, Valid info & Database entry is created \\
 \hline
 \end{tabular}
-\subsubsection{ClientDispatcher, ReportController}
+\subsubsection{I57 ClientDispatcher - ReportController}
 
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline

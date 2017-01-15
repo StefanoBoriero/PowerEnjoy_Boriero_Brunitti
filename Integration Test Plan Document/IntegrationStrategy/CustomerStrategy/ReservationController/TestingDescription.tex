@@ -1,4 +1,4 @@
-\subsubsection{UnlockManager, DatabaseController} 
+\subsubsection{I29 UnlockManager - DatabaseController} 
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
 \multicolumn{2}{|c|}{isUnlockable(vehicle-id, user-info)}\\
@@ -39,7 +39,7 @@ Existing vehicle & Database entry is updated to Unlocked \\
 \hline
 \end{tabular}
 
-\subsubsection{UnlockManager, CarActuator} 
+\subsubsection{I30 UnlockManager - CarActuator} 
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
 \multicolumn{2}{|c|}{unlock(vehicle-id)}\\
@@ -54,7 +54,7 @@ Unlockable vehicle-id & Right function is called\\
 \hline
 \end{tabular}
 
-\subsubsection{UnlockManager, ReservationTimer} 
+\subsubsection{I31 UnlockManager - ReservationTimer} 
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
 \multicolumn{2}{|c|}{stop-timer(vehicle-id, user)} \\
@@ -69,7 +69,7 @@ Valid vehicle-id, valid user & The timer for reservation is stopped \\
 \hline
 \end{tabular}
 
-\subsubsection{ReservationTimer, InfractionManagerDriver} 
+\subsubsection{I32 ReservationTimer - InfractionManagerDriver} 
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
 \multicolumn{2}{|c|}{timeout(vehicle-id, user-id)} \\
@@ -84,7 +84,7 @@ Any, Any & Right function is called from InfractionManager \\
 \hline
 \end{tabular}
 
-\subsubsection{CarReservator, DatabaseController} 
+\subsubsection{I33 CarReservator - DatabaseController} 
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
 \multicolumn{2}{|c|}{create-reservation(user-id, vehicle-id)} \\
@@ -118,7 +118,7 @@ Regular user, Available vehicle & Database entry is created \\
 \end{tabular}
 
 
-\subsubsection{CarReservator, ReservationTimer}
+\subsubsection{I34 CarReservator - ReservationTimer}
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
 \multicolumn{2}{|c|}{start-timer(reservation)} \\
@@ -131,7 +131,7 @@ A reservation & Timer for the reservation is started \\
 \hline
 \end{tabular}
 
-\subsubsection{AvailableCarRetriever, DatabaseController} 
+\subsubsection{I35 AvailableCarRetriever - DatabaseController} 
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
 \multicolumn{2}{|c|}{get-near-vehicles(position, range)} \\

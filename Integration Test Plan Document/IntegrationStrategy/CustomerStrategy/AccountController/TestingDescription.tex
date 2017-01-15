@@ -1,4 +1,4 @@
-\subsubsection{InfractionManager, DatabaseController} 
+\subsubsection{I41 InfractionManager - DatabaseController} 
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
 \multicolumn{2}{|c|}{update-status(user-id, status)} \\
@@ -16,7 +16,7 @@ Existing user, status & Database entry is updated \\
 \hline
 \end{tabular}
 
-\subsubsection{InfractionManager, BalanceManager}
+\subsubsection{I42 InfractionManager - BalanceManager}
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
 \multicolumn{2}{|c|}{pay(user-id, amount)} \\
@@ -40,7 +40,7 @@ Existing user, Positive value & Database entry is updated and DebtException is r
 \hline
 \end{tabular}
 
-\subsubsection{LoginManager, DatabaseController}
+\subsubsection{I43 LoginManager - DatabaseController}
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
 \multicolumn{2}{|c|}{login(username, password)} \\
@@ -62,7 +62,7 @@ Existing user, Correct password & Login is granted \\
 \end{tabular}
 
 
-\subsubsection{PersonalInformationEditor, PaymentInformationValidator}
+\subsubsection{I44 PersonalInformationEditor - PaymentInformationValidator}
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
 \multicolumn{2}{|c|}{isValid(payment-info)} \\
@@ -80,7 +80,7 @@ Valid payment information & Returns true \\
 \hline
 \end{tabular}
 
-\subsubsection{PersonalInformationEditor, DrivingLicenseValidator}
+\subsubsection{I45 PersonalInformationEditor - DrivingLicenseValidator}
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
 \multicolumn{2}{|c|}{isValid(driving-license)} \\
@@ -98,7 +98,7 @@ Valid driving license & Returns true \\
 \hline
 \end{tabular}
 
-\subsubsection{PersonalInformationEditor, DatabaseController}
+\subsubsection{I46 PersonalInformationEditor - DatabaseController}
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
 \multicolumn{2}{|c|}{edit-personal-info(user-info, user-id)} \\
@@ -115,7 +115,7 @@ User-info, Non existing user & InvalidUserException is raised \\
 User-info, Existing user & Database entry is updated \\
 \hline
 \end{tabular}
-\subsubsection{PersonalInformationRetriever, DatabaseController}
+\subsubsection{I47 PersonalInformationRetriever - DatabaseController}
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
 \multicolumn{2}{|c|}{get-personal-info(user-id)} \\

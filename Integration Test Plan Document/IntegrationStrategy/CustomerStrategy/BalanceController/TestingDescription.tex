@@ -1,4 +1,4 @@
-\subsubsection{BalanceManager, DatabaseController}
+\subsubsection{I36 BalanceManager - DatabaseController}
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
 \multicolumn{2}{|c|}{pay(user-id, amount)} \\
@@ -47,7 +47,7 @@ Regular user, Positive value & User balance entry is updated \\
 \hline
 \end{tabular}
 
-\subsubsection{BalanceManager, InfractionManager}
+\subsubsection{I37 BalanceManager - InfractionManager}
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
 \multicolumn{2}{|c|}{signal-infraction(user-id, infraction-type)} \\
@@ -65,7 +65,7 @@ Existing user, Infraction & Infraction is handled by InfractionManager \\
 \hline
 \end{tabular}
 
-\subsubsection{BalanceManager, NotificationForwarder}
+\subsubsection{I38 BalanceManager - NotificationForwarder}
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
 \multicolumn{2}{|c|}{notify(user)} \\
@@ -83,7 +83,7 @@ Existing user & A notification is sent to the user \\
 \hline
 \end{tabular}
 
-\subsubsection{TransactionProcessor, PaymentForwarder}
+\subsubsection{I39 TransactionProcessor - PaymentForwarder}
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
 \multicolumn{2}{|c|}{withdraw(payment-info, amount, user-id)} \\
@@ -110,7 +110,7 @@ Valid info, Positive value less than affordable, Existing user & Money is transf
 \hline
 \end{tabular}
 
-\subsubsection{TransactionProcessor, BalanceManager}
+\subsubsection{I40 TransactionProcessor - BalanceManager}
 \begin{tabular}{|p{5cm}|p{7cm}|}
 \hline
 \multicolumn{2}{|c|}{deposit(user-id, amount)} \\
