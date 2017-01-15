@@ -59,7 +59,7 @@ JPA & Java Persistence API \\ \hline
 \subsection{Changelog}
 \begin{itemize}[noitemsep]
 \item V 1.0: Release Version.
-\item V 1.1: Added front page, updated fig. 3,
+\item V 1.1: Added front page, updated fig. 3, removed AssistanceList and BillApplicator components, changed interfaces to comply with ITPD
 \end{itemize}
 \newpage
 \section{Architectural design}
@@ -174,9 +174,9 @@ When engine stops, the on-board car application sends a notification to the serv
 \end{figure}\\
 \textbf{INTERFACE}: 
  \newline
--\textbf{register(personal-info)} checks if the informations are valid, then the user is added to the database  
+-\textbf{register(user-info)} checks if the informations are valid, then the user is added to the database  
 \newline
--\textbf{InvalidInformationException} this exception is raised if the 	information are incorrect  
+-\textbf{InvalidArgumentException} this exception is raised if the 	information are incorrect  
 \newline
 \textbf{USES}:   
 \newline
@@ -192,12 +192,12 @@ When engine stops, the on-board car application sends a notification to the serv
 \end{figure}\\
 \textbf{INTERFACE}: 
  \newline
--\textbf{login():} enables users to log in   
+-\textbf{login(username, password):} enables users to log in   
 \newline
--\textbf{get-personal-info():} gets user's personal information from the database 
+-\textbf{get-personal-info(user-id):} gets user's personal information from the database 
 \newline
--\textbf{edit-personal-info():} updates user's personal information in the database \\
--\textbf{signal-infraction(infraction-info):} changes user's status to signalled in the database  
+-\textbf{edit-personal-info(user-info, user-id):} updates user's personal information in the database \\
+-\textbf{signal-infraction(user-id, infraction-info):} changes user's status to signalled in the database  
 \newline
 \textbf{USES}:   
 \newline
@@ -215,11 +215,11 @@ When engine stops, the on-board car application sends a notification to the serv
  \newline
 -\textbf{get-near-vehicles(position-information):} gets from the database the cars available near the selected position 
 \newline
--\textbf{create-reservation(user-info):} creates a new reservation in the database; the selected car won't be available anymore
+-\textbf{create-reservation(vehicle-id, user-info):} creates a new reservation in the database; the selected car won't be available anymore
 \newline
 -\textbf{UnavailableCarException:} this exception is raised if the selected car is no longer available (another user has reserved it while he was looking at the map)  
 \newline 
-- \textbf{unlock(user-info):} checks if the user is near the car he reserved: if so, interrupts the resertvation timer then delegates the opening to CarController
+- \textbf{unlock(vehicle-id, user-info):} checks if the user is near the car he reserved: if so, interrupts the resertvation timer then delegates the opening to CarController
 \\
 \textbf{USES}:   
 \newline
@@ -235,7 +235,7 @@ When engine stops, the on-board car application sends a notification to the serv
 \end{figure}\\
 \textbf{INTERFACE}: 
  \newline
--\textbf{deposit(payment-provider, amount, user):} adds to user's balance the indicated amount of money
+-\textbf{deposit(payment-method, amount, user):} adds to user's balance the indicated amount of money
 \newline
 -\textbf{TransactionException:} this exception is raised if the transaction fails 
 \newline
@@ -260,7 +260,7 @@ When engine stops, the on-board car application sends a notification to the serv
 \end{figure}\\
 \textbf{INTERFACE}: 
  \newline
--\textbf{report-damage(report-form):} adds the car which the report is about in the assistance list   
+-\textbf{report-damage(vehicle-plate, report):} adds the car which the report is about in the assistance list   
 \newline
 \textbf{USES}:   
 \newline
