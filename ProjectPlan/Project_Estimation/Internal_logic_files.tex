@@ -2,12 +2,13 @@
 In order to provide its functionalities, PowerEnjoy will need to store data and information.\\
 The main information it need to store is about vehicles. The relevant attributes needed are 
 \begin{itemize}
+\item Vehicle Id
 \item Plate number
 \item Status
 \item BatteryLevel
 \item Position
 \end{itemize}
-\\
+
 Another fundamental table is the one about rides, containing this information:
 \begin{itemize}
 \item Starting point
@@ -16,3 +17,79 @@ Another fundamental table is the one about rides, containing this information:
 \item Final position
 \item Final battery
 \end{itemize}
+
+To complete the set of tables oriented to the actual sharing functionality, the system will have a Reservation table with the following information:
+\begin{itemize}
+\item User id
+\item Vehicle id
+\item Starting time
+\item Unlocked car
+\end{itemize}
+
+For assistance list related functionalities the system needs an assistance table to store:
+\begin{itemize}
+\item Vehicle id
+\item Fault
+\item Status
+\item Employee in charge
+\end{itemize}
+
+Employee's information are stored as well:
+\begin{itemize}
+\item Employee id
+\item Name
+\item Surname
+\item District
+\item Job
+\end{itemize}
+
+Then the system needs all usual information about users:
+\begin{itemize}
+\item User id
+\item Username
+\item Name
+\item Surname
+\item Driving license
+\end{itemize}
+
+For security issues, payment information are stored in a different table:
+\begin{itemize}
+\item User id
+\item Payment info
+\end{itemize}
+
+
+Safe areas are store in a two-level structure. The first one containig:
+\begin{itemize}
+\item SafeArea id
+\item Type
+\end{itemize}
+
+
+The second one containing:
+\begin{itemize}
+\item SafeArea id
+\item Position
+\end{itemize}
+
+
+The following table sums up ILF's complexity and FP associated
+\\
+\begin{tabular}{|p{5cm}|p{3cm}|p{2cm}|}
+\hline
+\textbf{ILF} & \textbf{Complexity} & \textbf{FP} \\
+\hline
+
+Login data & Low & 7\\
+User data & Low & 7\\
+Employee data & Low & 7\\
+Password & Average & 10\\
+Safe areas & Low & 7\\
+Vehicle & Low & 7\\
+Reservation & Low & 7\\
+Ride & Average & 10\\
+Assistance & Low & 7\\
+\hline
+\multicolumn{2}{|l|}{\textbf{Total}} & 69\\
+\hline
+\end{tabular}
