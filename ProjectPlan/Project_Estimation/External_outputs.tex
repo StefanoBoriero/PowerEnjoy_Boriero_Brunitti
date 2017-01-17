@@ -1,0 +1,25 @@
+\subsection{External Outputs}
+The system need also to communicate with users other information than results of inquiries. These operations go under the name of External Outputs, and occurr on these occations:
+\begin{itemize}
+\item Notify a user he's a Debtor
+\item Notify a user he's been Banned
+\item Notify a user he committed an Infraction
+\item Notify a user his payment outcome
+\item Notify an employee a car has been added to assistance list
+\end{itemize}
+Since the Notification Gateway our system is going to use is an external one, all these operations have a low complexity in our development process.
+\\
+\begin{tabular}{|p{5cm}|p{3cm}|p{2cm}|}
+\hline
+\textbf{External Outputs} & \textbf{Complexity} & \textbf{FP} \\
+\hline
+
+Notify user he's a Debtor & Low & 4\\
+Notify user he's been Banned & Low & 4\\
+Notify user he committed an Infraction & Low & 4\\
+Notify user his payment outcome & Low & 4\\
+Notify employee a car has been added to assistance list & Low & 4\\
+\hline
+\multicolumn{2}{|l|}{\textbf{Total}} & 20\\
+\hline
+\end{tabular}

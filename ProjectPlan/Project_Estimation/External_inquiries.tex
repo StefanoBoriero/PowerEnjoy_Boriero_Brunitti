@@ -1,0 +1,24 @@
+\subsection{External Inquiries}
+The definition of external inquiry is a data request performed by a user. We divide have two different type of users, customers and employees. For the first we have the following possible inquiries:
+\begin{itemize}
+\item Get personal information
+\item Get available vehicles from a given position
+\end{itemize}
+For the second we have:
+\begin{itemize}
+\item Get Safe areas
+\item Get assistance list
+\end{itemize}
+Getting the available vehicles requires a bit of computation regarding vehicles position, so it will be labeled with an Average complexity. All the other interactions can be accomplished by a single query each, so they're classified with a Low complexity. A brief recap shown in the following table:\\
+\begin{tabular}{|p{6cm}|p{3cm}|p{2cm}|}
+\hline
+\textbf{External Inquiry} & \textbf{Complexity} & \textbf{FP}\\
+\hline
+Get personal information & Low & 3\\
+Get available vehicles & Average & 4\\
+Get safe areas & Low & 3\\
+Get assistance list & Low & 3\\
+\hline
+\multicolumn{2}{|l|}{\textbf{Total}} & 13\\
+\hline
+\end{tabular}
