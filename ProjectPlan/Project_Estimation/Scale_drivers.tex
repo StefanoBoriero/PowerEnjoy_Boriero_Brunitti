@@ -1,17 +1,39 @@
 \subsubsection{Scale Drivers}
 
-\hspace*{-2.5cm}\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+\hspace*{-3cm}\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
 	\hline
 	\textbf{Scale Factors} & \textbf{Very Low} & \textbf{Low} & \textbf{Nominal} & \textbf{High} & \textbf{Very High} & \textbf{Extra High}\\
 	\hline
 	\textbf{PREC} & thoroughly unprecedented & largely unprecedented & somewhat unprecedented & generally familiar & largely familiar & thoroughly familiar\\
-	\textbf{SF$_j$} & 6.20 & 4.96 & 3.72 & 2.48 & 1.24 & 0.00\\\hline
+	SF$_j$ & 6.20 & 4.96 & 3.72 & 2.48 & 1.24 & 0.00\\\hline
 	\textbf{FLEX} & rigorous & occasional relaxation & some relaxation & general conformity & some conformity & general goals\\
-	\textbf{SF$_j$} & 5.07 & 4.05 & 3.04 & 2.03 & 1.01 & 0.00\\\hline
+	SF$_j$ & 5.07 & 4.05 & 3.04 & 2.03 & 1.01 & 0.00\\\hline
 	\textbf{RESL} & little (20\%) & some (40\%) & often (60\%) & generally (75\%) & mostly (90\%) & full (100\%)\\
-	\textbf{SF$_j$} & 7.07 & 5.65 & 4.24 & 2.83 & 1.41 & 0.00\\\hline
+	SF$_j$ & 7.07 & 5.65 & 4.24 & 2.83 & 1.41 & 0.00\\\hline
 	\textbf{TEAM} & very difficult interactions & some difficult interactions & basically cooperative interactions & largely cooperative & highly cooperative & seamless interactions\\
-	\textbf{SF$_j$} & 5.48 & 4.38 & 3.29 & 2.19 & 1.10 & 0.00\\\hline
+	SF$_j$ & 5.48 & 4.38 & 3.29 & 2.19 & 1.10 & 0.00\\\hline
 	\textbf{PMAT} & Level 1 Lower & Level 1 Upper & Level 2 & Level 3 & Level 4 & Level 5\\
-	\textbf{SF$_j$} & 7.80 & 6.24 & 4.68 & 3.12 & 1.56 & 0.00\\\hline
+	SF$_j$ & 7.80 & 6.24 & 4.68 & 3.12 & 1.56 & 0.00\\\hline
+\end{tabular}
+
+\begin{itemize}
+\item \textbf{Precedentness}: represents the level of experience our team has in developing large projects. Since this is the first project of such dimension we're facing, this value will be low.
+\item \textbf{Development Flexibility}: represents the degree of flexibility in the development process with respect to external specification and requirements. Since the stakeholders do not exist, we assume requirements as immutable, thus the value will be low.
+\item \textbf{Risk resolution}: represents how much we are aware of risks and how we are ready to react if anything happens. Since we have performed a good risk analisys but not much extensive, we will set this value to Nominal
+\item \textbf{Team Cohesion}: represents the ability of team members to work togheter and know each other. Since we had exceprience in the development of another project last year, this value is set to very high.
+\item \textbf{Project Maturity}: represents the level of progress in the system project. Since we have already produced RASD, DD and ITPD, this is set to level 4.
+\end{itemize}
+Here's a tabular recap of what stated above\\
+\begin{tabular}{|p{6cm}|p{3cm}|p{2cm}|}
+\hline
+\textbf{Scale Driver} & \textbf{Factor} & \textbf{Value}\\
+\hline
+Precedentness(PREC) & Low & 4.96\\
+Development Flexibility(FLEX) & Low & 4.05\\
+Risk Resolution(RESL) & Nominal & 4.24\\
+Team Cohesion(TEAM) & Very High & 1.10\\
+Process Maturity(PMAT) & Level 4 & 1.56\\
+\hline
+\multicolumn{2}{|l|}{\textbf{Total}} & 15.91\\
+\hline
 \end{tabular}
