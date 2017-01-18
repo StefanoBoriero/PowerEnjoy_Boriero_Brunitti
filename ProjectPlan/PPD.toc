@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {section}{\numberline {2}Project Size and Cost Estimation}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Size estimation: function points}{3}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Internal Logic Files}{3}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}External Logic Files(ELFs)}{5}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}External Inputs (EIs)}{5}{subsubsection.2.1.3}
+\contentsline {subsection}{\numberline {2.2}External Inquiries}{6}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}External Outputs}{7}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Overall Estimation}{7}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Cost and effort estimation: COCOMO II}{8}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}Scale Drivers}{8}{subsubsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.2}Cost Drivers}{9}{subsubsection.2.5.2}
+\contentsline {section}{\numberline {3}Schedule}{14}{section.3}
+\contentsline {section}{\numberline {4}Resource Allocation}{14}{section.4}
+\contentsline {section}{\numberline {5}Risk Managment}{14}{section.5}
+\contentsline {section}{\numberline {6}Effort Spent}{15}{section.6}

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="it.polimi.it." webLink="http://https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti" view-date="2016-09-01" view-index="0" gantt-divider-location="353" resource-divider-location="300" version="2.8.1" locale="it_IT">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="it.polimi.it." webLink="http://https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti" view-date="2016-09-01" view-index="0" gantt-divider-location="353" resource-divider-location="300" version="2.8.1" locale="it">
     <description><![CDATA[Software Engineering 2 Project]]></description>
     <view zooming-state="default:11" id="gantt-chart">
         <field id="tpd3" name="Nome" width="205" order="0"/>
@@ -133,7 +133,10 @@
             <task id="78" name="Main updates and checks" meeting="false" start="2018-01-18" duration="60" complete="0" expand="true"/>
         </task>
     </tasks>
-    <resources/>
+    <resources>
+        <resource id="0" name="Boriero Stefano" function="Default:0" contacts="" phone="Boriero"/>
+        <resource id="1" name="Brunitti Simone" function="Default:0" contacts="" phone=""/>
+    </resources>
     <allocations/>
     <vacations/>
     <previous/>
