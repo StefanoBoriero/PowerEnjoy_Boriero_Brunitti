@@ -29,6 +29,73 @@ Brunitti Simone   875039
 \section{Project Size and Cost Estimation}
 
 \subsection{Size estimation: function points}
+For estimating function points we will use the following tables:\\
+Internal Logic Files and External Logic Files \\\\
+\begin{tabular}{|p{3cm}|p{1cm}|p{1cm}|p{1cm}|}
+\hline
+& \multicolumn{3}{l|}{Data Elements}\\
+\hline
+\textit{Record Elements} & \textit{1-19} & \textit{20-50} & \textit{51+} \\
+\hline
+1 & Low & Low & Avg\\
+\hline
+2-5 & Low & Avg & High\\
+\hline
+6+ & Avg & High & High\\
+\hline
+\end{tabular}
+\\\\\\
+External Output and External Inquiry
+\\\\
+\begin{tabular}{|p{3cm}|p{1cm}|p{1cm}|p{1cm}|}
+\hline
+& \multicolumn{3}{l|}{Data Elements}\\
+\hline
+\textit{Record Elements} & \textit{1-5} & \textit{6-19} & \textit{20+} \\
+\hline
+0-1 & Low & Low & Avg\\
+\hline
+2-3 & Low & Avg & High\\
+\hline
+4+ & Avg & High & High\\
+\hline
+\end{tabular}
+\\\\\\
+External Input
+\\\\
+\begin{tabular}{|p{3cm}|p{1cm}|p{1cm}|p{1cm}|}
+\hline
+& \multicolumn{3}{l|}{Data Elements}\\
+\hline
+\textit{Record Elements} & \textit{1-4} & \textit{5-15} & \textit{16+} \\
+\hline
+0-1 & Low & Low & Avg\\
+\hline
+2-3 & Low & Avg & High\\
+\hline
+4+ & Avg & High & High\\
+\hline
+\end{tabular}
+\\\\\\
+UFP Complexity Weights
+\\\\
+\begin{tabular}{|p{3cm}|p{1cm}|p{1cm}|p{1cm}|}
+\hline
+& \multicolumn{3}{l|}{Data Elements}\\
+\hline
+\textit{Function Type} & \textit{Low} & \textit{Average} & \textit{High} \\
+\hline
+Internal Logic Files & 7 & 10 & 15\\
+\hline
+External Logic Files & 5 & 7 & 10\\
+\hline
+External Inputs & 3 & 4 & 6\\
+\hline
+External Outputs & 4 & 5 & 7\\
+\hline
+External Inquiries & 3 & 4 & 6\\
+\hline
+\end{tabular}
 
 \input{Project_Estimation/Internal_logic_files.tex}
 \subsubsection{External Logic Files(ELFs)}
