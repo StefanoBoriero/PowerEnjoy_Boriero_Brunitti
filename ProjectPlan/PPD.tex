@@ -27,8 +27,66 @@ Brunitti Simone   875039
 \section{Introduction}
 
 \section{Project Size and Cost Estimation}
-\subsection{Size estimation: function points}
 
+\subsection{Size estimation: function points}
+\subsubsection{External Logic Files(ELFs)}
+The first external data source of PowerEnJoy is Google Maps API. The interactions between our system and this API are the following:
+\begin{itemize}[noitemsep]
+\item \textbf{Map Displaying}: The API must interact with the customer's terminal device in order to display a map showing the nearest cars and their distance in an area selected by the user. This first interaction is made quite simple by Google Maps API, so we will give it an average complexity
+\item \textbf {Drawing Tools}: The API must interact with the employee system to allow the employee to draw new safe areas and see the existing ones. This interaction is quite complex, so we will give it an high complexity.
+\end{itemize}
+The following table sums up ELF complexity and FP associated\\\\
+\begin{tabular}{|p{5cm}|p{3cm}|p{2cm}|}
+\hline
+\textbf{ELF} & \textbf{Complexity} & \textbf{FP} \\
+\hline
+
+Map Displaying & Average & 7\\
+Drawing Tools & High & 10\\
+\hline
+\multicolumn{2}{|l|}{\textbf{Total}} & 17\\
+\hline
+\end{tabular}
+\subsubsection{External Inputs (EIs)}
+In this section we will list all the different kind of interactions that PowerEnJoy has with its users.
+First, we list the interactions that any user can have with the platform: 
+\begin{itemize}[noitemsep]
+\item Login/Logout: simple operations, involve only the Account Controller. Points = 2x3FPs.
+\end{itemize}
+Then, we list the interactions between the customer and the platform:
+\begin{itemize}[noitemsep]
+\item Register a new account: Since this feature requires some data to be checked, we give it an Average complexity. Points = 4FPs.
+\item Rent a car : This is a key feature and a highly complex one, involving many different components. Points = 6 FPs.
+\item Add money to the balance: For security reasons, this operation requires some steps. We give it average complexity. Points = 4FPs.
+\item Edit personal info: Some validation of the new data is required, therefore it's average complexity. Points = 4FPs
+\item Report a damage: this is a simple task, involving only one component. Points = 3FPs.
+\end{itemize}
+Finally, we list the interaction that an employee can have with the platform:
+\begin{itemize}[noitemsep]
+\item Drawing a new safe area: Since the process requires the area to be valid (and the validity of an area needs to be checked), we think this is a complex opearation. Points = 6FPs.
+\item Taking in charge a vehicle: This is a straightforward task and a fairly simple one. Points = 3FPs.
+\item Register/Dismiss a car to the fleet: Since this operation requires cooperation between the car and the central system, we conside it to be complex. Points = 6x2 FPs
+\end{itemize}
+The following table sums up EIs complexity and FP associated:\\\\
+\begin{tabular}{|p{5cm}|p{3cm}|p{2cm}|}
+\hline
+\textbf{EI} & \textbf{Complexity} & \textbf{FP} \\
+\hline
+Login & Low & 3\\
+Logout & Low & 3\\
+Register new account & Average & 4 \\
+Rent a car & High & 6 \\
+Add money & Average & 4 \\
+Edit personal info & Average & 4 \\
+Report a damage & Low & 3 \\
+Drawing new safe area & High & 6\\
+Take in charge vehicle & Low & 3\\
+Register a car & High & 6\\
+Dismiss a car & High & 6\\
+\hline
+\multicolumn{2}{|l|}{\textbf{Total}} & 48\\
+\hline
+\end{tabular}
 \subsection{Cost and effort estimation: COCOMO II}
 
 \section{Schedule}
