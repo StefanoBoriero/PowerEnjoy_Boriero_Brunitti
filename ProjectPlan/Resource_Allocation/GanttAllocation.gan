@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="it.polimi.it." webLink="http://https://github.com/StefanoBoriero/PowerEnjoy_Boriero_Brunitti" view-date="2017-01-01" view-index="0" gantt-divider-location="353" resource-divider-location="300" version="2.8.1" locale="it">
+    <description><![CDATA[Software Engineering 2 Project]]></description>
+    <view zooming-state="default:9" id="gantt-chart">
+        <field id="tpd3" name="Nome" width="196" order="0"/>
+        <field id="tpd4" name="Data d'inizio" width="64" order="1"/>
+        <field id="tpd5" name="Data di fine" width="74" order="2"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nome" width="210" order="0"/>
+        <field id="1" name="Ruolo predefinito" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="true"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="" month="1" date="1" type="HOLIDAY"><![CDATA[New Years Day]]></date>
+        <date year="" month="1" date="6" type="HOLIDAY"><![CDATA[Epiphany]]></date>
+        <date year="" month="4" date="25" type="HOLIDAY"><![CDATA[Liberation Day]]></date>
+        <date year="" month="5" date="1" type="HOLIDAY"><![CDATA[Labor Day]]></date>
+        <date year="" month="6" date="2" type="HOLIDAY"><![CDATA[Republic Day]]></date>
+        <date year="" month="8" date="15" type="HOLIDAY"><![CDATA[Assumption Day]]></date>
+        <date year="" month="11" date="1" type="HOLIDAY"><![CDATA[All Saints Day]]></date>
+        <date year="" month="12" date="8" type="HOLIDAY"><![CDATA[Immaculate Conception Day]]></date>
+        <date year="" month="12" date="25" type="HOLIDAY"><![CDATA[Christmas Day]]></date>
+        <date year="" month="12" date="26" type="HOLIDAY"><![CDATA[St. Stephen's Day]]></date>
+        <date year="2005" month="3" date="28" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2006" month="4" date="17" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2007" month="4" date="9" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2008" month="3" date="24" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2009" month="4" date="13" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2010" month="4" date="5" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2011" month="4" date="25" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2012" month="4" date="9" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2013" month="4" date="1" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2014" month="4" date="21" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2015" month="4" date="6" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2016" month="3" date="28" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Brunitti Simone" meeting="false" start="2016-10-17" duration="502" complete="0" expand="true">
+            <task id="19" name="RASD" meeting="false" start="2016-10-17" duration="389" complete="0" expand="true">
+                <task id="89" name="Meetings wth local government" meeting="false" start="2017-11-20" duration="1" complete="0" expand="true"/>
+                <task id="1" name="Identification of stakeholders" meeting="false" start="2016-10-17" duration="1" complete="0" expand="true"/>
+                <task id="2" name="Definition of main functionalities" meeting="false" start="2016-10-28" duration="3" complete="0" expand="true"/>
+                <task id="3" name="Initial requirements draft" meeting="false" start="2016-10-28" duration="3" complete="0" expand="true"/>
+                <task id="4" name="Initial assumptions" meeting="false" start="2016-10-28" duration="3" complete="0" expand="true"/>
+                <task id="5" name="Initial draft of activity diagrams" meeting="false" start="2016-11-04" duration="1" complete="0" expand="true"/>
+                <task id="6" name="Identification of usecase" meeting="false" start="2016-11-04" duration="3" complete="0" expand="true"/>
+                <task id="7" name="Initial draft of sequence diagrams" meeting="false" start="2016-11-04" duration="3" complete="0" expand="true"/>
+                <task id="86" name="Meeting with local government" meeting="false" start="2016-11-07" duration="1" complete="0" expand="true"/>
+                <task id="8" name="Refinement of functionalities" meeting="false" start="2016-11-08" duration="1" complete="0" expand="true"/>
+                <task id="9" name="Refinement of assumptions" meeting="false" start="2016-11-08" duration="1" complete="0" expand="true"/>
+                <task id="10" name="Refinement of requirements" meeting="false" start="2016-11-08" duration="1" complete="0" expand="true"/>
+                <task id="11" name="Meeting with stakeholders" meeting="false" start="2016-11-09" duration="1" complete="0" expand="true"/>
+                <task id="12" name="Final requirements" meeting="false" start="2016-11-10" duration="3" complete="0" expand="true"/>
+                <task id="13" name="Final assumptions" meeting="false" start="2016-11-10" duration="3" complete="0" expand="true"/>
+                <task id="14" name="Final activity diagrams" meeting="false" start="2016-11-10" duration="3" complete="0" expand="true"/>
+                <task id="15" name="Initial cost, schedule and effort estimation" meeting="false" start="2016-11-10" duration="3" complete="0" expand="true"/>
+                <task id="20" name="Meeting with stakeholders" meeting="false" start="2016-11-12" duration="1" complete="0" expand="true"/>
+                <task id="21" name="Revision of estimations" meeting="false" start="2016-11-12" duration="1" complete="0" expand="true"/>
+                <task id="23" name="Meeting with stakeholders" meeting="false" start="2016-11-13" duration="1" complete="0" expand="true"/>
+                <task id="24" name="Final estimations" meeting="false" start="2016-11-13" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="25" name="DD" meeting="false" start="2016-11-28" duration="13" complete="0" expand="true">
+                <task id="26" name="Initial mockups of UI" meeting="false" start="2016-11-28" duration="1" complete="0" expand="true"/>
+                <task id="27" name="High level draft architecture" meeting="false" start="2016-11-28" duration="2" complete="0" expand="true"/>
+                <task id="28" name="Identification of main components" meeting="false" start="2016-11-28" duration="3" complete="0" expand="true"/>
+                <task id="29" name="Meeting with stakeholders" meeting="false" start="2016-12-01" duration="1" complete="0" expand="true"/>
+                <task id="30" name="Revision of architecture" meeting="false" start="2016-12-02" duration="1" complete="0" expand="true"/>
+                <task id="31" name="Refinements of components, identification of subcomponents" meeting="false" start="2016-12-02" duration="2" complete="0" expand="true"/>
+                <task id="32" name="First draft of component interfaces" meeting="false" start="2016-12-03" duration="2" complete="0" expand="true"/>
+                <task id="36" name="Refinements of UI mockups" meeting="false" start="2016-12-04" duration="1" complete="0" expand="true"/>
+                <task id="35" name="Initial draft on Algorithm design" meeting="false" start="2016-12-05" duration="1" complete="0" expand="true"/>
+                <task id="37" name="Meeting with stakeholders" meeting="false" start="2016-12-06" duration="1" complete="0" expand="true"/>
+                <task id="38" name="Final UI design" meeting="false" start="2016-12-07" duration="1" complete="0" expand="true"/>
+                <task id="39" name="Final component interfaces" meeting="false" start="2016-12-07" duration="3" complete="0" expand="true"/>
+                <task id="40" name="Final algorithm design" meeting="false" start="2016-12-07" duration="2" complete="0" expand="true"/>
+                <task id="41" name="Meeting with stakeholders" meeting="false" start="2016-12-10" duration="1" complete="0" expand="true"/>
+                <task id="42" name="Final refinements" meeting="false" start="2016-12-11" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="43" name="Development" meeting="false" start="2017-01-09" duration="325" complete="0" expand="true">
+                <task id="45" name="Component development" meeting="false" start="2017-01-09" duration="179" complete="0" expand="true"/>
+                <task id="46" name="External component acquisition and study" meeting="false" start="2017-01-09" duration="15" complete="0" expand="true"/>
+                <task id="47" name="Code inspection" meeting="false" start="2017-01-16" duration="174" complete="0" expand="true"/>
+                <task id="48" name="Unit tests" meeting="false" start="2017-01-20" duration="175" complete="0" expand="true"/>
+                <task id="49" name="Component integration" meeting="false" start="2017-04-01" duration="104" complete="0" expand="true"/>
+                <task id="50" name="Module development" meeting="false" start="2017-07-16" duration="62" complete="0" expand="true"/>
+                <task id="51" name="Module integration" meeting="false" start="2017-07-25" duration="62" complete="0" expand="true"/>
+                <task id="52" name="Subsystem Integration testing" meeting="false" start="2017-09-10" duration="26" complete="0" expand="true"/>
+                <task id="53" name="System testing" meeting="false" start="2017-09-25" duration="16" complete="0" expand="true"/>
+                <task id="54" name="First internal demonstration" meeting="false" start="2017-10-11" duration="1" complete="0" expand="true"/>
+                <task id="55" name="Refinements" meeting="false" start="2017-10-12" duration="8" complete="0" expand="true"/>
+                <task id="56" name="Client side development" meeting="false" start="2017-10-19" duration="13" complete="0" expand="true"/>
+                <task id="57" name="Second internal demonstration" meeting="false" start="2017-11-02" duration="1" complete="0" expand="true"/>
+                <task id="58" name="First demnstration to stakeholders" meeting="false" start="2017-11-03" duration="1" complete="0" expand="true"/>
+                <task id="59" name="Refinements" meeting="false" start="2017-11-04" duration="8" complete="0" expand="true"/>
+                <task id="60" name="Third internal demonstration" meeting="false" start="2017-11-12" duration="1" complete="0" expand="true"/>
+                <task id="61" name="Second demonstration to stakeholders" meeting="false" start="2017-11-13" duration="1" complete="0" expand="true"/>
+                <task id="62" name="Refinements" meeting="false" start="2017-11-14" duration="5" complete="0" expand="true"/>
+                <task id="63" name="Document revision" meeting="false" start="2017-11-19" duration="2" complete="0" expand="true"/>
+                <task id="64" name="Final presentation to stakeholders" meeting="false" start="2017-11-22" duration="1" complete="0" expand="true"/>
+                <task id="65" name="Final refinements" meeting="false" start="2017-11-23" duration="8" complete="0" expand="true"/>
+                <task id="66" name="Final internal demonstratino" meeting="false" start="2017-12-01" duration="1" complete="0" expand="true"/>
+                <task id="67" name="User manual" meeting="false" start="2017-12-02" duration="1" complete="0" expand="true"/>
+                <task id="68" name="Release" meeting="false" start="2017-12-04" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="69" name="Deployment" meeting="false" start="2017-12-05" duration="32" complete="0" expand="true">
+                <task id="71" name="System deployment" meeting="false" start="2017-12-05" duration="7" complete="0" expand="true"/>
+                <task id="72" name="Teaching meeting with employee" meeting="false" start="2017-12-14" duration="8" complete="0" expand="true"/>
+                <task id="73" name="Final meetings" meeting="false" start="2018-01-03" duration="1" complete="0" expand="true"/>
+                <task id="74" name="Final preparations" meeting="false" start="2018-01-04" duration="6" complete="0" expand="true"/>
+            </task>
+            <task id="75" name="Start-up" meeting="false" start="2018-01-11" duration="67" complete="0" expand="true">
+                <task id="76" name="System first start" meeting="false" start="2018-01-11" duration="1" complete="0" expand="true"/>
+                <task id="77" name="Real-life simulation" meeting="false" start="2018-01-11" duration="32" complete="0" expand="true"/>
+                <task id="78" name="Main updates and checks" meeting="false" start="2018-01-18" duration="60" complete="0" expand="true"/>
+            </task>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Boriero Stefano" function="Default:0" contacts="" phone="Boriero"/>
+        <resource id="1" name="Brunitti Simone" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
