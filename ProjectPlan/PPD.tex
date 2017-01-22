@@ -172,22 +172,22 @@ $$\displaystyle Effort = A \times EAF \times KSLOC^E $$ \\
 In COCOMO II, A has the following value:\\
 $$\displaystyle A = 2.94 $$ \\
 EAF has the precedently calculated value:\\
-$$\displaystyle EAF = 1.496 $$ \\
+$$\displaystyle EAF = 1.3123 $$ \\
 Finally, let's calculate E (B=0.91 in COCOMO II):
 $$\displaystyle E = B + 0.01 \times \sum_{i}SF_i = B + 0.01 \times 15.91 = 0.91 + 0.1591 = 1.0691  $$ \\
 We can now calculate the Effort lower bound: \\
-$$\displaystyle Effort = 2.94 \times 1.496 \times 7.682^E = 38.899 PM \approx 39PM $$ \\
+$$\displaystyle Effort = 2.94 \times 1.3123 \times 7.682^E = 34.1225 PM \approx 35PM $$ \\
 And upper bound:\\
-$$\displaystyle Effort = 2.94 \times 1.496 \times 11.189^E = 58.148 PM \approx 59PM $$ \\
+$$\displaystyle Effort = 2.94 \times 1.3123 \times 11.189^E = 51.0085 PM \approx 52PM $$ \\
 \subsection{Schedule Estimation}
 We can now estimate the project duration:\\
 $$\displaystyle Duration = 3.67 \times Effort^F $$ \\
 Let's calculate F:\\
 $$\displaystyle F = 0.28 + 0.2 \times (E - B) = 0.28 + 0.2\times (1.0691 - 0.91) = 0.28 + 0.2\times 0.1591 = 0.31182 $$
 Finally, we have a lower bound of:\\
-$$\displaystyle Duration = 3.67 \times 38.899^F = 11.49 months $$ 
+$$\displaystyle Duration = 3.67 \times 34.1225^F = 11.03 months $$ 
 And an upper bound of:\\
-$$\displaystyle Duration = 3.67 \times 58.148^F = 13.02 months $$ 
+$$\displaystyle Duration = 3.67 \times 51.0085^F = 12.5 months $$ 
 \newpage
 \section{Schedule}
 \input{Schedule/Schedule.tex}
