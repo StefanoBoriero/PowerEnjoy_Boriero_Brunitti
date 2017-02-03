@@ -1,0 +1,125 @@
+\documentclass{article}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+\section{Introduction}
+
+\section{Functional Role}
+The main functionality of this class is to invoke a service. In particular, this class invokes a service whose request has been triggered by an event. To do that, this class checks that all the parameters are well formed, and sets up a map filled with those parameters. The definitions of such maps have been encoded in XML files that are located in CERCARE I FILE NELLA CARTELLA DI OFBIX
+
+\section{Checklist}
+\subsection{Naming Conventions}
+Nothing to say
+\subsection{Indention}
+Nothing to say
+\subsection{Braces}
+There are three if statements followed by one instruction not included between braces at lines 106, 253, 394
+\subsection{File Organization}
+
+\subsection{Wrapping Lines}
+
+\subsection{Comments}
+There's a commented out block of code in lines 180-184, whithout any explanation
+
+\subsection{Java Source Files}
+Javadoc is minimal. It describes only the main goal and doesn't help to fully understand the way it's achieved. There's no javadoc for the static method, but it is widely commented.
+
+\subsection{Package and Import Statements}
+Nothing to say about that
+
+\subsection{Class and Interface Declarations}
+The invoke method is too long. As it deals mostly with multiple checks on inputs and environmental setup, it could be splitted in different subroutines. PLEASE DO THAT IT IS SO DIFFICULT TO READ.
+
+\subsection{Initialization and Declarations}
+The variable serviceName is delcared and initialized to Null on line 93, but is later set to event.invoke, on line 102. We suggest to directly intialize serviceName to event.invoke.\\
+Many declarations appear in the middle of a code block. This may be due to the fact the the invoke method is too long. A possible solution to this problem could be using private methods, making the whole class more readable.\\
+Here are the lines and the declarations that are not compatible with this rule:
+\begin{itemize}[noitemsep]
+\item Line 86:
+\begin{itemize}[noitemsep]
+\item DispatchContext dctx = dispatcher.getDispatchContext();\\
+\end{itemize}
+\item Line 92 and 93:
+\begin{itemize}[noitemsep]
+\item String mode = SYNC;
+\item String serviceName = null; 
+\end{itemize}   
+\item Line from 109 to 112:
+\begin{itemize}[noitemsep]
+\item Locale locale = UtilHttp.getLocale(request);
+\item TimeZone timeZone = UtilHttp.getTimeZone(request);
+\item HttpSession session = request.getSession();
+\item GenericValue userLogin = (GenericValue) session.getAttribute("userLogin"); 
+\end{itemize} 
+\item Line 115:
+\begin{itemize}[noitemsep]
+\item ModelService model = null;
+\end{itemize} 
+\item Line 132: 
+\begin{itemize}[noitemsep]
+\item boolean isMultiPart = ServletFileUpload.isMultipartContent(request);
+\end{itemize}  
+\item Line 133:
+\begin{itemize}[noitemsep]
+\item Map<String, Object> multiPartMap = new HashMap<String, Object>();
+\end{itemize}
+\item Line 146 and 147:
+\begin{itemize}[noitemsep]
+\item  String sizeThresholdStr = EntityUtilProperties.getPropertyValue("general", "http.upload.max.sizethreshold", "10240", dctx.getDelegator());
+\item int sizeThreshold = 10240; 
+\end{itemize}  
+\item Line 155 and 156: 
+\begin{itemize}[noitemsep]
+\item String tmpUploadRepository = EntityUtilProperties.getPropertyValue("general", "http.upload.tmprepository", "runtime/tmp", dctx.getDelegator());
+\item String encoding = request.getCharacterEncoding(); 
+\end{itemize}         
+\item Line 159: 
+\begin{itemize}[noitemsep]
+\item ServletFileUpload upload = new ServletFileUpload(new DiskFileItemFactory(sizeThreshold, new File(tmpUploadRepository))); \\
+\end{itemize}  
+\item Line 162: 
+\begin{itemize}[noitemsep]
+\item FileUploadProgressListener listener = new FileUploadProgressListener();
+\end{itemize}  
+\item Line 171:
+\begin{itemize}[noitemsep]
+\item  List<FileItem> uploadedItems = null;
+\end{itemize}
+\item Line 234 and 235:
+\begin{itemize}[noitemsep]
+\item  Map<String, Object> rawParametersMap = UtilHttp.getCombinedMap(request);
+\item Set<String> urlOnlyParameterNames = UtilHttp.getUrlOnlyParameterMap(request).keySet();
+\end{itemize}
+\item Line 238:
+\begin{itemize}[noitemsep]
+\item Map<String, Object> serviceContext = new HashMap<String, Object>();
+\end{itemize} 
+\item Line 249: 
+\begin{itemize}[noitemsep]
+\item Object value = null;
+\end{itemize}
+\item Line 312:
+\begin{itemize}[noitemsep]
+\item List<Object> errorMessages = new LinkedList<Object>();
+\end{itemize}
+\item Line 336: 
+\begin{itemize}[noitemsep]
+\item Map<String, Object> result = null;
+\end{itemize}
+\item Line 361:
+\begin{itemize}[noitemsep]
+\item String responseString = null;
+\end{itemize}
+\end{itemize}
+\subsection{Output Format}
+Some outputs signlaing errors throughout the code are a bit general. Maybe the author should provide additional information on these problems. These outputs can be found at:
+\begin{itemize}[noitemsep]
+\item Line 120 and 124: the output displays a "problems getting the service model" message
+\item Line 175: the output displays a "problem reading uploaded data" message
+\item Line 357 and 358: the output is a generic "service invocation error" message
+\end{itemize}
+Moreover, from line 400 to 411 the output displays a long message. We suggest to use "\textbackslash n" to make the output error more readable
+\subsection{Exceptions}
+Line 151 and 152 contain an inconsistency. The error message clearly states "Unable to obtain the threshold size from general.properties; using default 10K", implying that sizeThreshold will be set to 10240. On line 152, however, we find that sizeThreshold is set to -1. Either the error message or the assignment at line 152 is wrong.
+\end{document}
