@@ -9,6 +9,7 @@ This document aims to present the outcome of a code inspection perfomed over the
 \textbf{apache-ofbiz-16.11.01/apache-ofbiz-16.11.01/framework/webapp/src/}\\
 \textbf{main/java/org/apache/ofbiz/webapp/event/ServiceEventHandler.java}\\
 
+The checklist used can be found at the end of this document
 \section{Functional Role}
 The main functionality of this class is to invoke a service. In particular, this class invokes a service whose request has been triggered by an event. To do that, this class checks that all the parameters are well formed, and sets up a map filled with those parameters. The definitions of such maps have been encoded in XML files that are located at\\
 \textbf{apache-ofbiz-16.11.01/framework/service/servicedef/services.xml}\\
